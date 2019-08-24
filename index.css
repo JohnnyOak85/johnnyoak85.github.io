@@ -1,40 +1,100 @@
+/* Main working canvas, stylizes font and style of content */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Gives the entire page a background color */
 html {
-    font-family: 'Kodchasan', sans-serif;
     background-color: #8FBCDB;
 }
 
-#leftbanner {
-    height: 100%;
-    width: 15%;
-    top: 0%;
-    left: 0%;
-    position: fixed;
-    overflow-x: hidden;
-    background-image: url("images/background/wolverine.jpg");
-    opacity: 0.3;
+/* Ensures there are no visible margins */
+body {
+    margin: 0;
+}
+
+/* Builds a grid style content box with three columns.
+   A middle one for the content and two banners to the side. */
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+/* Floating left ensures all boxes will be side to side */
+.banner {
     float: left;
-}
-
-#rightbanner {
-    height: 100%;
-    width: 15%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 15%;
-    margin-right: -15%;
-    overflow-x: hidden;
-    background-image: url("images/background/wolverine.jpg");
+    background-color: #153450;
     opacity: 0.3;
 }
 
-#content {
-    margin-left: 14.7%;
-    margin-right: 18%;
+.content-column {
+    float: left;
+    overflow: hidden;
+    display: grid;
 }
 
-.logo {
+/* Centers the content */
+.header-row {
+    margin: auto;
+}
+
+.content-row {
+    display: grid;
+}
+
+.darker-shade {
+    background-color: #447294;
+}
+
+.content-box {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.skills-row {
+    margin: auto;
+    width: 600px;
+    padding-bottom: 100px;
+}
+
+h1, h3, h4 {
+    text-align: center;
+}
+
+
+.arrow {
+    width: 25px;
+}
+
+.flipped {
+    transform: scaleY(-1);
+}
+
+.company-logo {
     height: 100px;
+}
+
+.skill-logo {
+    height: 50px;
+}
+
+#skills {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#project-title {
+    font-weight: bold;
+}
+
+
+
+.title-column {
+    width: 150px;
 }
 
 .footer {
@@ -48,15 +108,11 @@ html {
     z-index: 2;
 }
 
-.title {
-    padding-left: 40%;
-}
-
-#contacts {
+.contacts {
     padding-top: 15px;
 }
 
-#copyright {
+.copyright {
     border-top: 10px;
     padding: 10px;
     color: white;
@@ -70,94 +126,25 @@ a.footerlink {
     padding-right: 10px;
 }
 
-.contact {
+.contact-logo {
     width: 25px;
     margin-left: 5px;
 }
 
-.skills {
-    height: 50px;
-}
-
-#header {
-    margin-top: 50px;
-    padding-left: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-#timeline {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-left: 5%;
-    display: inline-block;
-    background-color: #447294;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#studies {
-    margin-bottom: 50px;
-    padding-left: 25%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#projects {
-    margin-bottom: 50px;
-    padding-left: 5%;
-    width: 100%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #447294;
-}
-
-#skills {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    padding-bottom: 100px;
-}
-
-#project-box {
+.slideshow-container {
     margin: auto;
-    width: 100%;
 }
 
-#project-title {
-    font-weight: bold;
+.slide {
+    margin-left: 25px;
 }
 
-#project-detail {
-    font-style: italic;
+.prev {
+    transform: rotate(270deg);
 }
 
-.main-column {
-    float: left;
-    width: 700px;
-    padding-right: 25px;
-    padding-left: 20%;
+.next {
+    transform: rotate(90deg);
+    margin-left: 150px;
 }
 
-.title-column {
-    width: 150px;
-}
-
-#it-column {
-    width: 300px;
-    float: left;
-}
-
-#soft-skill-column {
-    width: 300px;
-    margin-left: 400px;
-}
-
-#goldencars {
-    color: gold;
-    text-decoration: none;
-}
