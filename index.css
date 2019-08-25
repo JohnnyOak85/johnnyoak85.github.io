@@ -1,21 +1,25 @@
 /* Main working canvas, stylizes font and style of content */
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
 /* Gives the entire page a background color */
+
 html {
     background-color: #8FBCDB;
 }
 
 /* Ensures there are no visible margins */
+
 body {
     margin: 0;
 }
 
 /* Builds a grid style content box with three columns.
    A middle one for the content and two banners to the side. */
+
 .grid {
     width: 100%;
     display: grid;
@@ -23,10 +27,10 @@ body {
 }
 
 /* Floating left ensures all boxes will be side to side */
+
 .banner {
     float: left;
-    background-color: #153450;
-    opacity: 0.3;
+    background-color: #1a4061;
 }
 
 .content-column {
@@ -36,6 +40,7 @@ body {
 }
 
 /* Centers the content */
+
 .header-row {
     margin: auto;
 }
@@ -67,6 +72,10 @@ body {
     display: none;
 }
 
+.last-row {
+    padding-bottom: 100px;
+}
+
 .skills-row {
     margin: auto;
     width: 600px;
@@ -79,6 +88,7 @@ body {
 }
 
 /* Text */
+
 h1, h3, h4 {
     text-align: center;
 }
@@ -95,6 +105,7 @@ h1, h3, h4 {
 
 .arrow {
     width: 25px;
+    cursor: pointer;
 }
 
 .flipped {
@@ -107,21 +118,20 @@ h1, h3, h4 {
 }
 
 .skill-logo {
-    height: 50px;
+    height: 30px;
 }
 
-#skills {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    padding-bottom: 100px;
+.skill {
+    margin: auto;
+}
+
+.dirt-white {
+color: #e8e4c9;
 }
 
 #project-title {
     font-weight: bold;
 }
-
-
 
 .title-column {
     width: 150px;
@@ -145,13 +155,11 @@ h1, h3, h4 {
 .copyright {
     border-top: 10px;
     padding: 10px;
-    color: white;
     font-size: 11px;
     font-style: italic;
 }
 
 a.footerlink {
-    color: white;
     text-decoration: none;
     padding-right: 10px;
 }
@@ -165,17 +173,24 @@ a.footerlink {
     margin: auto;
 }
 
+.slide-grid {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
 .slide {
     margin-left: 25px;
 }
 
 .prev {
-    transform: rotate(270deg);
+    margin-top: 200%;
+    transform: rotate(90deg);
 }
 
 .next {
-    transform: rotate(90deg);
-    margin-left: 150px;
+    margin-top: 200%;
+    margin-left: 50%;
+    transform: rotate(270deg);
 }
 
 .screenshot {

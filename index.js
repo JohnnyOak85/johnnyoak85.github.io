@@ -3,6 +3,13 @@ $(document).ready(() => {
         $(event.currentTarget).parent().siblings('.flavour').toggle();
         $(event.currentTarget).toggleClass('flipped');
     })
+
+    $('.arrow').mouseenter(function () {
+        $(this).attr('src', 'images/graphics/arrow.gif');
+    })
+    $('.arrow').mouseleave(function () {
+        $(this).attr('src', 'images/graphics/arrow.png');
+    })
 })
 
 var slideIndex = 1;
