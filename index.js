@@ -1,7 +1,7 @@
 $(document).ready(() => {
-    $('.arrow').on('click', () => {
-        $('.hideable').toggle();
-        $('.arrow').toggleClass('flipped');
+    $('.switch').on('click', () => {
+        $(event.currentTarget).parent().siblings('.flavour').toggle();
+        $(event.currentTarget).toggleClass('flipped');
     })
 })
 

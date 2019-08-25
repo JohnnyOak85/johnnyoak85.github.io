@@ -51,6 +51,20 @@ body {
 .content-box {
     margin-left: 25%;
     margin-right: 25%;
+    display: grid;
+}
+
+.inner-grid {
+    display: grid;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.hidden {
+    display: none;
 }
 
 .skills-row {
@@ -59,10 +73,25 @@ body {
     padding-bottom: 100px;
 }
 
+.arrow-box {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Text */
 h1, h3, h4 {
     text-align: center;
 }
 
+.title {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+/* Graphics */
 
 .arrow {
     width: 25px;
@@ -74,6 +103,7 @@ h1, h3, h4 {
 
 .company-logo {
     height: 100px;
+    margin: auto;
 }
 
 .skill-logo {
@@ -148,3 +178,6 @@ a.footerlink {
     margin-left: 150px;
 }
 
+.screenshot {
+    width: 500px;
+}
