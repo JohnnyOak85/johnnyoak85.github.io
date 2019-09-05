@@ -23,7 +23,7 @@ body {
 .grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 10% 80% 10%;
 }
 
 /* Floating left ensures all boxes will be side to side */
@@ -100,6 +100,9 @@ h1, h3, h4 {
 .date {
     font-style: italic;
 }
+.center-text {
+    text-align: center;
+}
 
 /* Graphics */
 
@@ -108,9 +111,18 @@ h1, h3, h4 {
     cursor: pointer;
 }
 
+.arrow a {
+    position: relative;
+}
+
+.arrow a:active {
+    top: 2px;
+}
+
 .flipped {
     transform: scaleY(-1);
 }
+
 
 .company-logo {
     height: 100px;
@@ -123,6 +135,8 @@ h1, h3, h4 {
 
 .skill {
     margin: auto;
+    font-size: 12px;
+    padding-bottom: 10px;
 }
 
 .dirt-white {
@@ -159,7 +173,12 @@ color: #e8e4c9;
     font-style: italic;
 }
 
-a.footerlink {
+/* Link costumization */
+.menu-link {
+    text-decoration: none;
+}
+
+.footer-link {
     text-decoration: none;
     padding-right: 10px;
 }
@@ -195,4 +214,9 @@ a.footerlink {
 
 .screenshot {
     width: 500px;
+}
+
+.fixed-banner {
+    position: fixed;
+    display: block;
 }
