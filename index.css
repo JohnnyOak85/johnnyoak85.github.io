@@ -76,10 +76,8 @@ body {
     padding-bottom: 100px;
 }
 
-.skills-row {
-    margin: auto;
-    width: 600px;
-    padding-bottom: 100px;
+.skills {
+    font-size: 12px;
 }
 
 .arrow-box {
@@ -107,15 +105,12 @@ h1, h3, h4 {
 /* Graphics */
 
 .arrow {
-    width: 25px;
+    width: 30px;
     cursor: pointer;
-}
-
-.arrow a {
     position: relative;
 }
 
-.arrow a:active {
+.arrow:active {
     top: 2px;
 }
 
@@ -123,14 +118,9 @@ h1, h3, h4 {
     transform: scaleY(-1);
 }
 
-
 .company-logo {
     height: 100px;
     margin: auto;
-}
-
-.skill-logo {
-    height: 30px;
 }
 
 .skill {
@@ -141,10 +131,6 @@ h1, h3, h4 {
 
 .dirt-white {
 color: #e8e4c9;
-}
-
-#project-title {
-    font-weight: bold;
 }
 
 .title-column {
@@ -188,35 +174,9 @@ color: #e8e4c9;
     margin-left: 5px;
 }
 
-.slideshow-container {
-    margin: auto;
-}
-
-.slide-grid {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-}
-
-.slide {
-    margin-left: 25px;
-}
-
-.prev {
-    margin-top: 200%;
-    transform: rotate(90deg);
-}
-
-.next {
-    margin-top: 200%;
-    margin-left: 50%;
-    transform: rotate(270deg);
-}
-
-.screenshot {
-    width: 500px;
-}
-
 .fixed-banner {
     position: fixed;
     display: block;
+    margin-left: 5px;
+    margin-right: 5px;
 }
