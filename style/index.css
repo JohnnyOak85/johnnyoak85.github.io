@@ -18,9 +18,7 @@ body {
     margin: 0;
     width: 100%;
     display: grid;
-    grid-template-areas:
-    'header'
-    'main';
+    grid-template-areas: 'header' 'main';
     background-color: #DFE1FB;
 }
 
@@ -37,7 +35,6 @@ nav {
 }
 
 nav a {
-    top: 20px;
     display: block;
     text-align: center;
     position: relative;
@@ -46,14 +43,23 @@ nav a {
     padding: 15px;
     color: #000;
     background-color: #FBF9DF;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-decoration: none;
+    text-shadow: 0px 0px 30px #DFE1FB;
+    transition: all 0.2s ease-in;
 }
 
 nav a:active {
-    top: 22px;
+    top: 2px;
     box-shadow: none;
     color: #000;
+}
+
+nav a:hover {
+    border-width: 0 8px 8px 0;
+    color: #DFE1FB;
+    text-shadow: 0px 0px 30px #DFE1FB;
+    transition: all 0.2s ease-in;
 }
 
 /* Header Area */
@@ -62,7 +68,7 @@ header {
     float: left;
     width: 100%;
     padding: 200px;
-    background: #DFE1FB url('images/background/gaming-pattern.png') repeat 0 0;
+    background: #DFE1FB url('../images/background/gaming-pattern.png') repeat 0 0;
     background-position: left;
     text-align: center;
     animation: slide 20s linear infinite;
@@ -84,14 +90,15 @@ section {
 
 article {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 50% 50%;
+    margin-left: -35%;
 }
 
 .hidden {
     display: none;
 }
 
-time {
+article p {
     font-style: italic;
 }
 
@@ -104,7 +111,7 @@ time {
 
 footer {
     position: fixed;
-    height: 85px;
+    height: 95px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -121,7 +128,7 @@ footer a {
 }
 
 .contact-logo {
-    width: 25px;
+    width: 35px;
     margin-left: 5px;
 }
 
@@ -133,14 +140,11 @@ footer a {
     color: #e8e4c9;
 }
 
-/* Button Styling */
+/* Arrow Styling */
 
-.arrow-box {
+.arrow {
     margin-top: 10px;
     margin-left: 10px;
-}
-
-button {
     border-style: outset;
     border-width: 0 7px 7px 0;
     background-color: Transparent;
@@ -150,22 +154,20 @@ button {
     cursor: pointer;
     position: relative;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
 }
 
-button:focus {
-    outline:0;
+.arrow:focus {
+    outline: 0;
 }
 
-button:active {
+.arrow:active {
     top: 2px;
 }
 
-button:hover {
+.arrow:hover {
     border-width: 0 8px 8px 0;
 }
 
 .up {
     transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
 }

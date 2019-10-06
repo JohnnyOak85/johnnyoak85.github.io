@@ -4,3 +4,7 @@ $(document).ready(() => {
         $(event.currentTarget).toggleClass('up');
     })
 })
+
+const easter_egg = new Konami(function () {
+    alert('Konami Code!')
+});
