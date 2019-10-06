@@ -5,65 +5,84 @@
     box-sizing: border-box;
 }
 
-/* Gives the entire page a background color */
-
-html {
-    background-color: #8FBCDB;
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px 0;
+    }
 }
-
-/* Ensures there are no visible margins */
 
 body {
     margin: 0;
-}
-
-/* Builds a grid style content box with three columns.
-   A middle one for the content and two banners to the side. */
-
-.grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-areas:
+    'header'
+    'main';
+    background-color: #DFE1FB;
 }
 
-/* Floating left ensures all boxes will be side to side */
+/* Navigation Area */
 
-.banner {
+nav {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
     float: left;
-    background-color: #1a4061;
+    text-decoration: none;
+    background-color: #A7A8BC;
 }
 
-.content-column {
+nav a {
+    top: 20px;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 15px;
+    border-radius: 25px;
+    padding: 15px;
+    color: #000;
+    background-color: #FBF9DF;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
+}
+
+nav a:active {
+    top: 22px;
+    box-shadow: none;
+    color: #000;
+}
+
+/* Header Area */
+
+header {
     float: left;
+    width: 100%;
+    padding: 200px;
+    background: #DFE1FB url('images/background/gaming-pattern.png') repeat 0 0;
+    background-position: left;
+    text-align: center;
+    animation: slide 20s linear infinite;
+}
+
+/* Main Content Area */
+
+main {
     overflow: hidden;
     display: grid;
 }
 
-/* Centers the content */
-
-.header-row {
-    margin: auto;
-}
-
-.content-row {
+section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 50%;
     display: grid;
 }
 
-.darker-shade {
-    background-color: #447294;
-}
-
-.content-box {
-    margin-left: 25%;
-    margin-right: 25%;
-    display: grid;
-}
-
-.inner-grid {
-    display: grid;
-}
-
-.card {
+article {
     display: grid;
     grid-template-columns: 75% 25%;
 }
@@ -72,50 +91,8 @@ body {
     display: none;
 }
 
-.last-row {
-    padding-bottom: 100px;
-}
-
-.skills {
-    font-size: 12px;
-}
-
-.arrow-box {
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-/* Text */
-
-h1, h3, h4 {
-    text-align: center;
-}
-
-.title {
-    font-weight: bold;
-}
-
-.date {
+time {
     font-style: italic;
-}
-.center-text {
-    text-align: center;
-}
-
-/* Graphics */
-
-.arrow {
-    width: 30px;
-    cursor: pointer;
-    position: relative;
-}
-
-.arrow:active {
-    top: 2px;
-}
-
-.flipped {
-    transform: scaleY(-1);
 }
 
 .company-logo {
@@ -123,50 +100,24 @@ h1, h3, h4 {
     margin: auto;
 }
 
-.skill {
-    margin: auto;
-    font-size: 12px;
-    padding-bottom: 10px;
-}
+/* Footer Area */
 
-.dirt-white {
-color: #e8e4c9;
-}
-
-.title-column {
-    width: 150px;
-}
-
-.footer {
+footer {
     position: fixed;
     height: 85px;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #153450;
     text-align: center;
     z-index: 2;
-}
-
-.contacts {
+    background-color: #A7A8BC;
     padding-top: 15px;
 }
 
-.copyright {
-    border-top: 10px;
-    padding: 10px;
-    font-size: 11px;
-    font-style: italic;
-}
-
-/* Link costumization */
-.menu-link {
-    text-decoration: none;
-}
-
-.footer-link {
+footer a {
     text-decoration: none;
     padding-right: 10px;
+    color: #e8e4c9;
 }
 
 .contact-logo {
@@ -174,9 +125,47 @@ color: #e8e4c9;
     margin-left: 5px;
 }
 
-.fixed-banner {
-    position: fixed;
-    display: block;
-    margin-left: 5px;
-    margin-right: 5px;
+.copyright {
+    border-top: 10px;
+    padding: 10px;
+    font-size: 11px;
+    font-style: italic;
+    color: #e8e4c9;
+}
+
+/* Button Styling */
+
+.arrow-box {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+button {
+    border-style: outset;
+    border-width: 0 7px 7px 0;
+    background-color: Transparent;
+    display: inline-block;
+    padding: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+button:focus {
+    outline:0;
+}
+
+button:active {
+    top: 2px;
+}
+
+button:hover {
+    border-width: 0 8px 8px 0;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
