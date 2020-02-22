@@ -1,0 +1,95 @@
+/* Main working canvas, stylizes font and style of content */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    background-color: #DFE1FB;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: none;
+}
+
+/* Header Area */
+
+header {
+    grid-area: header;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 15vh;
+    background: #DFE1FB url('../images/background/gaming-pattern.png') repeat 0 0;
+    background-position: left;
+    text-align: center;
+    animation: slide 20s linear infinite;
+}
+
+#oculus {
+    height: 50vh;
+    border-radius: 50%;
+}
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px 0;
+    }
+}
+
+/* Main Content Area */
+
+main {
+    grid-area: main;
+    overflow: hidden;
+    display: grid;
+    font-size: xx-small;
+}
+
+section {
+    display: grid;
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+article p {
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Footer Area */
+
+footer {
+    grid-area: footer;
+    height: 100vh;
+    padding-top: 40vh;
+    padding-left: 15vw;
+    background-color: #A7A8BC;
+    font-size: xx-small;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #e8e4c9;
+}
+
+.contact-logo {
+    width: 35px;
+    vertical-align: middle;
+}

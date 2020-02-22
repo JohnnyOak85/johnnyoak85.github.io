@@ -1,0 +1,60 @@
+@media only screen and (min-width: 768px) {
+    /* Navigation Bar */
+    nav {
+        display: initial;
+        position: fixed;
+        top: 30vh;
+        height: 100%;
+        text-decoration: none;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        position: relative;
+        margin: 15px;
+        border-radius: 25px;
+        padding: 15px;
+        color: #000;
+        background-color: #0abcf9;
+        background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+    }
+    nav a:active {
+        top: 2px;
+        box-shadow: none;
+    }
+    nav a:hover {
+        color: #DFE1FB;
+        transition: all 0.3s ease-in;
+    }
+    header {
+        margin-bottom: 25vh;
+    }
+    /* Main Content Area */
+    main {
+        font-size: initial;
+    }
+    section {
+        padding-bottom: 25vh;
+    }
+    #skills {
+
+    }
+    .skillset {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    /* Footer Area */
+    footer {
+        padding-left: 40vw;
+        font-size: initial;
+    }
+    footer a {
+        padding-bottom: 5%;
+    }
+    .contact-logo {
+        width: 50px;
+    }
+}
