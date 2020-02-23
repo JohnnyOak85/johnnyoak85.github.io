@@ -3,7 +3,7 @@
     nav {
         display: initial;
         position: fixed;
-        top: 30vh;
+        top: 5vh;
         height: 100%;
         text-decoration: none;
     }
@@ -31,21 +31,24 @@
     }
     header {
         margin-bottom: 25vh;
+        padding-top: 20vh;
     }
     /* Main Content Area */
     main {
         font-size: initial;
     }
     section {
-        padding-bottom: 25vh;
+        margin-bottom: 25vh;
+        margin-left: 25vw;
+    margin-right: 25vw;
     }
     .skillset {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        padding-left: 10vw;
+        margin-left: 10vw;
     }
     /* Footer Area */
     footer {
+        height: 100vh;
+        padding-top: 40vh;
         padding-left: 40vw;
         font-size: initial;
     }

@@ -26,7 +26,8 @@ header {
     grid-area: header;
     width: 100vw;
     height: 100vh;
-    padding-top: 15vh;
+    margin-bottom: 10vh;
+    padding-top: 10vh;
     background: #DFE1FB url('../images/background/gaming-pattern.png') repeat 0 0;
     background-position: left;
     text-align: center;
@@ -58,8 +59,9 @@ main {
 
 section {
     display: grid;
-    padding-left: 25vw;
-    padding-right: 25vw;
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 section h3 {
@@ -76,13 +78,20 @@ ul {
     padding: 0;
 }
 
+.skillset {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 5vw;
+}
+
 /* Footer Area */
 
 footer {
     grid-area: footer;
-    height: 100vh;
-    padding-top: 40vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     padding-left: 15vw;
+    padding-right: 15vw;
     background-color: #A7A8BC;
     font-size: xx-small;
 }
