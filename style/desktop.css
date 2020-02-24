@@ -40,7 +40,9 @@
     section {
         margin-bottom: 25vh;
         margin-left: 25vw;
-    margin-right: 25vw;
+        margin-right: 25vw;
+        padding-top: 5vh;
+        text-align: justify;
     }
     .skillset {
         margin-left: 10vw;
