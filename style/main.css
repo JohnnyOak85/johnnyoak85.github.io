@@ -3,10 +3,11 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
     margin: 0;
     width: 100%;
     display: grid;
@@ -28,7 +29,7 @@ header {
     height: 100vh;
     margin-bottom: 10vh;
     padding-top: 10vh;
-    background: #DFE1FB url('../images/background/email-pattern.png') repeat 0 0;
+    background: url('../images/background/image.png') repeat 0 0;
     background-position: left;
     text-align: center;
     animation: slide 20s linear infinite;
@@ -71,6 +72,10 @@ section h3 {
     text-align: center;
 }
 
+section a {
+    color: cyan;
+}
+
 article p {
     margin-top: 0;
     font-style: italic;
@@ -96,6 +101,10 @@ ul {
     font-style: initial;
 }
 
+.meter {
+    display: none;
+}
+
 .column {
     margin-right: 15px;
 }
@@ -108,8 +117,6 @@ footer {
     padding-bottom: 10vh;
     padding-left: 15vw;
     padding-right: 15vw;
-    /* background-image: linear-gradient(#434343,#000000); */
-    /* background-color: #404040; */
     font-size: xx-small;
 }
 
@@ -122,8 +129,4 @@ footer a {
 .contact-logo {
     width: 35px;
     vertical-align: middle;
-}
-
-.meter {
-    display: none;
 }
