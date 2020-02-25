@@ -11,7 +11,8 @@ body {
     width: 100%;
     display: grid;
     grid-template-areas: 'header' 'main' 'footer';
-    background-color: #DFE1FB;
+    background-image: linear-gradient(#4CA1AF, #2C3E50);
+    /* background-color: #DFE1FB; */
 }
 
 /* Navigation Bar */
@@ -28,7 +29,7 @@ header {
     height: 100vh;
     margin-bottom: 10vh;
     padding-top: 10vh;
-    background: #DFE1FB url('../images/background/gaming-pattern.png') repeat 0 0;
+    background: #DFE1FB url('../images/background/email-pattern.png') repeat 0 0;
     background-position: left;
     text-align: center;
     animation: slide 20s linear infinite;
@@ -84,6 +85,14 @@ ul {
     margin-left: 5vw;
 }
 
+.story {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.story-block {
+    margin-right: 10vh;
+}
 /* Footer Area */
 
 footer {
@@ -92,7 +101,8 @@ footer {
     padding-bottom: 10vh;
     padding-left: 15vw;
     padding-right: 15vw;
-    background-color: #A7A8BC;
+    background-image: linear-gradient(#434343,#000000);
+    /* background-color: #404040; */
     font-size: xx-small;
 }
 

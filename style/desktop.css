@@ -40,10 +40,13 @@
     section {
         margin-bottom: 25vh;
         margin-left: 25vw;
-    margin-right: 25vw;
+        margin-right: 25vw;
     }
     .skillset {
         margin-left: 10vw;
+    }
+    .story {
+
     }
     /* Footer Area */
     footer {
