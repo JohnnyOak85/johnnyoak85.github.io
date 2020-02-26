@@ -56,7 +56,9 @@ main {
     overflow: hidden;
     display: grid;
     font-size: xx-small;
-    color: #FFFF00
+    /* color: #FFFF00; */
+    color: gold;
+    /* color: goldenrod; */
 }
 
 section {
@@ -105,8 +107,12 @@ ul {
     display: none;
 }
 
-.column {
-    margin-right: 15px;
+.tech {
+    margin-right: initial;
+}
+
+#certifications article {
+    padding-left: 15vw;
 }
 
 /* Footer Area */
@@ -115,7 +121,7 @@ footer {
     grid-area: footer;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 15vw;
+    padding-left: 25vw;
     padding-right: 15vw;
     font-size: xx-small;
 }

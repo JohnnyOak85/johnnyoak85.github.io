@@ -46,13 +46,16 @@
     .skillset {
         margin-left: 10vw;
     }
+    .tech {
+        margin-right: 100px;
+    }
     .meter {
         display: initial;
-        width: 10vw;
+        width: 7vw;
         position: relative;
         border-radius: 25px;
         border-style: solid;
-        border-color: #2c69d1;
+        border-color: #808080;
         float: right;
         vertical-align: middle;
     }
