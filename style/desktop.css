@@ -47,12 +47,12 @@
         margin-left: 10vw;
     }
     .meter {
-        /* display: initial; */
-        width: 25vh;
+        display: initial;
+        width: 10vw;
         position: relative;
         border-radius: 25px;
         border-style: solid;
-        border-color: #555;
+        border-color: #2c69d1;
         float: right;
         vertical-align: middle;
     }
