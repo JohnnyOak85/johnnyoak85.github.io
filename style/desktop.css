@@ -1,12 +1,4 @@
 @media only screen and (min-width: 768px) {
-    /* Header Area */
-    #header {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    #oculus {
-        height: 50vh;
-    }
     /* Navigation Bar */
     nav {
         display: initial;
@@ -37,9 +29,17 @@
         color: #DFE1FB;
         transition: all 0.3s ease-in;
     }
+    /* Header Area */
     header {
         margin-bottom: 25vh;
         padding-top: 20vh;
+    }
+    #intro {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #oculus {
+        height: 50vh;
     }
     /* Main Content Area */
     main {

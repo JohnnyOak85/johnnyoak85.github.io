@@ -2,7 +2,6 @@
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -29,24 +28,22 @@ header {
     height: 100vh;
     margin-bottom: 10vh;
     padding-top: 10vh;
-    color: greenyellow;
     background: url('../resources/background/image.png') repeat 0 0;
     background-position: left;
     text-align: center;
     animation: slide 20s linear infinite;
 }
 
-#header h3 {
-    text-align: initial !important;
-}
-
-article h1 {
-    margin-top: 5vh;
+h1 {
+    font-size: 2em;
+    text-align: center;
 }
 
 #oculus {
     height: 30vh;
     border-radius: 50%;
+    display: block;
+    margin: auto;
 }
 
 @keyframes slide {
