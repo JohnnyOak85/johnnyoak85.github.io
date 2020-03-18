@@ -1,140 +1,147 @@
 /* Main working canvas, stylizes font and style of content */
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    display: grid;
-    grid-template-areas: 'header' 'main' 'footer';
-    background-image: linear-gradient(#04619f, #202020);
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  background-image: linear-gradient(#04619f, #202020);
 }
 
 /* Navigation Bar */
 
 nav {
-    display: none;
+  display: none;
 }
 
 /* Header Area */
 
 header {
-    grid-area: header;
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: 10vh;
-    padding-top: 10vh;
-    background: url('../resources/background/image.png') repeat 0 0;
-    background-position: left;
-    text-align: center;
-    animation: slide 20s linear infinite;
+  grid-area: header;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 10vh;
+  padding-top: 10vh;
+  background: url("../resources/background/image.png") repeat 0 0;
+  background-position: left;
+  text-align: center;
+  animation: slide 20s linear infinite;
 }
 
 h1 {
-    font-size: 2em;
-    text-align: center;
+  font-size: 2em;
+  text-align: center;
 }
 
 #oculus {
-    height: 30vh;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 
 @keyframes slide {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: -400px 0;
-    }
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -400px 0;
+  }
 }
 
 /* Main Content Area */
 
 main {
-    grid-area: main;
-    overflow: hidden;
-    display: grid;
-    font-size: xx-small;
-    color: gold;
+  grid-area: main;
+  overflow: hidden;
+  display: grid;
+  font-size: xx-small;
+  color: gold;
 }
 
 section {
-    display: grid;
-    margin-bottom: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding-top: initial;
-    text-align: justify;
+  display: grid;
+  margin-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top: initial;
+  text-align: justify;
 }
 
 section h3 {
-    text-align: center;
+  text-align: center;
 }
 
 hr {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 section a {
-    color: cyan;
+  color: cyan;
 }
 
 article p {
-    margin-top: 0;
-    font-style: italic;
+  margin-top: 0;
+  font-style: italic;
 }
 
-article h4, h5 {
-    margin-bottom: 0;
+article h4,
+h5 {
+  margin-bottom: 0;
 }
 
 #right-column {
-    margin-left: -5vh;
+  margin-left: -5vh;
 }
 
 .skillset {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 15vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 15vw;
 }
 
 .skillset p {
-    font-style: initial;
+  font-style: initial;
 }
 
 .tech {
-    margin-right: initial;
+  margin-right: initial;
 }
 
 #certifications article {
-    padding-left: 15vw;
+  padding-left: 15vw;
 }
 
 /* Footer Area */
 
 footer {
-    grid-area: footer;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 25vw;
-    padding-right: 15vw;
-    font-size: xx-small;
+  grid-area: footer;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 25vw;
+  padding-right: 15vw;
+  font-size: xx-small;
 }
 
 footer a {
-    display: block;
-    text-decoration: none;
-    color: #e8e4c9;
+  display: block;
+  text-decoration: none;
+  color: #e8e4c9;
 }
 
 .contact-logo {
-    width: 35px;
-    vertical-align: middle;
+  width: 35px;
+  vertical-align: middle;
+}
+
+#secret {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1vh;
 }
