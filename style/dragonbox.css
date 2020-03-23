@@ -3,15 +3,29 @@
 body {
   background: linear-gradient(#f85b1a, #202020);
   font-family: Abel, Arial, Verdana, sans-serif;
-}
-
-main {
   color: #fbe20b;
 }
 
+main {
+  margin-bottom: 10vh;
+}
+
+.sidebar {
+  position: fixed;
+  width: 30vw;
+  background: linear-gradient(#072083, #303030);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 6px;
+  margin: 1.5rem;
+  margin-top: -0.01rem;
+  padding: 15px;
+  line-height: 1.8;
+}
+
 .card {
-  left: 30%;
-  width: 600px;
+  left: 40vw;
+  width: 50vw;
   background: linear-gradient(#072083, #303030);
   box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
   border: none;
@@ -19,39 +33,19 @@ main {
   overflow: hidden;
   position: relative;
   margin: 1.5rem;
-  padding: 5px;
-}
-
-.general {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  box-sizing: border-box;
-  padding: 1rem;
-  padding-top: 0;
 }
 
 .child {
     padding-left: 10px;
 }
 
-.grandchild {
-    padding-left: 20px;
-}
-
-.missing {
-    color: red
-}
-
-.footer {
+footer {
     position: fixed;
     height: auto;
     left: 0;
     bottom: 0;
     width: 100%;
+    padding-top: 1vh;
     background-color: #153450;
     text-align: center;
     z-index: 2;
