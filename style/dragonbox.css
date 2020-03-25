@@ -38,6 +38,10 @@ main {
   padding-left: 10px;
 }
 
+.grandchild {
+  padding-left: 20px;
+}
+
 footer {
   position: fixed;
   height: auto;
