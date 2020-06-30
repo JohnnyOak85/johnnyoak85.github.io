@@ -1,5 +1,0 @@
-# 1 Month for most static assets
-
-<FilesMatch "\.(html|webp|png|ico)$">
-    Header set Cache-Control "max-age=2592000, public"
-</FilesMatch>
