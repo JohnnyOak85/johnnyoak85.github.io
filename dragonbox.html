@@ -5,130 +5,137 @@
     <meta charset="utf-8">
     <meta name="author" content="João Carvalho">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/spectre.min.css">
+    <link type="text/css" rel="stylesheet" href="style/semantic.css" />
     <link type="text/css" rel="stylesheet" href="style/dragonbox.css" />
-    <link rel="icon" href="resources/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="resources/icons/dragonball.ico" type="image/x-icon">
     <title>Dragon Box Archives</title>
 </head>
 
 <body>
     <main>
-        <section class="left">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Welcome to Dragon Box Archives!</div>
+        <div class="ui grid">
+            <div class="four wide column">
+                <div class="ui card">
+                    <div class="content blue-gradient">
+                        <div class="header yellow-text">Welcome to Dragon Box Archives!</div>
+                        <div class="description yellow-text">
+                            A community of Dragon Ball fans looking for the best footage available out there!<br>
+                            There's various projects across teams and servers to ensure the best releases.
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
+                <img class="ui fluid image" src="./resources/logos/kame.webp" alt="Kame">
+                <div class="ui card">
+                    <div class="content blue-gradient yellow-text">
+                        > <a href="http://matela.stronazen.pl/" target="_blank">Dragon Ball Cassette Tape
+                            Archive</a><br>
+                        > <a href="https://nwoscans.wordpress.com/" target="_blank">Dragon Ball Doujinshi Archive</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="twelve wide column">
+                <div class="ui top attached tabular menu no-border blue-transparent">
+                    <div class="active item no-border yellow-text" data-tab="current">Current Projects
+                    </div>
+                    <div class="item no-border yellow-text" data-tab="video">Video Editing Projects
+                    </div>
+                    <div class="item no-border yellow-text" data-tab="audio">Audio Syncing Projects
+                    </div>
+                    <div class="item no-border yellow-text" data-tab="subtitle">Subtitling Projects
+                    </div>
+                </div>
+                <div class="ui bottom attached active tab segment blue-gradient no-border yellow-text"
+                    data-tab="current">
                     <p>
-                        A community of Dragon Ball fans looking for the best footage available out there!<br>
-                        There's various projects across teams and servers to ensure the best releases.
-                    </p>
-                </div>
-            </div>
-            <img class="kame" src="./resources/logos/kame.webp" alt="Kame">
-            <div class="card">
-                <a href="http://matela.stronazen.pl/" target="_blank">Dragon Ball Cassette Tape Archive</a>
-                <a href="https://nwoscans.wordpress.com/" target="_blank">Dragon Ball Doujinshii Archive</a>
-            </div>
-        </section>
-        <section class="right">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Current Projects</div>
-                </div>
-                <div class="card-body">
-                    <p>Video Game Animated Cutscenes - DNA<br>
+                        Video Game animated cutscenes - DNA<br>
                         <span class="child">Currently subtitling</span><br>
                     </p>
-                    <p>Dragon Ball Heroes Animated Promos - DNA<br>
+                    <p>
+                        Dragon Ball Heroes promotional shorts - DNA<br>
                         <span class="child">Currently subtitling</span><br>
                         <span class="child">Need to rip the cutscenes from Ultimate Mission series</span>
                     </p>
-                    <p>Broadcast Audio - Team Mirolo<br>
+                    <p>
+                        Broadcast Audio - Team Mirolo<br>
                         <span class="child">Cleaning and synchronizing Dragon Ball broadcast audio to Dragon Box
                             footage.</span>
                     </p>
-                    <p>Color Correction - Seed of Might<br>
+                    <p>
+                        Color Correction - Seed of Might<br>
                         <span class="child">Color correct Dragon Box footage.</span>
                     </p>
-                    <p>Cassette Tape Archiving - tronk21<br>
+                    <p>
+                        Cassette Tape Archiving - tronk21<br>
                         <span class="child">Archiving all tape albums.</span>
                     </p>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Open Projects</div>
-                </div>
-                <div class="card-body">
-                    <p>Footage Missing<br>
+                <div class="ui bottom attached tab segment blue-gradient no-border yellow-text" data-tab="video">
+                    <p>Recording<br>
                         <span class="child">Dragon Ball Z Year End TV Special</span><br>
-                        <span class="child">Creditless endings for DBZ movies 10, 11, 12 and 13</span><br>
-                        <span class="child">Creditless ending for Broli movie</span><br>
-                    </p>
-                    <p>Video editing<br>
-                        <span class="child">Dragon Ball Movies creditless openings and endings</span><br>
-                        <span class="grandchild">Split openings from endings</span><br>
-                        <span class="child">Dragon Ball Kai trailers and teasers</span><br>
-                        <span class="grandchild">Rough footage, needs work</span><br>
-                    </p>
-                    <p>Audio Syncing<br>
-                        <span class="child">Dragon Ball Z creditless openings and endings</span><br>
-                        <span class="grandchild">CD tracks</span><br>
-                        <span class="child">Dragon Ball Movies</span><br>
-                        <span class="grandchild">Laserdisc tracks</span><br>
-                        <span class="grandchild">Drama cassette</span><br>
-                        <span class="grandchild">CD tracks</span><br>
-                        <span class="child">Dragon Ball Movies creditless openings and endings</span><br>
-                        <span class="grandchild">CD tracks</span><br>
-                        <span class="child">Dragon Ball GT creditless openings and endings</span><br>
-                        <span class="grandchild">CD tracks</span><br>
-                    </p>
-                    <p>Subtitling<br>
-                        <span class="child">Dragon Ball Z creditless openings and endings</span><br>
-                        <span class="child">Dragon Ball Movies creditless openings and endings</span><br>
-                        <span class="child">Dragon Ball GT creditless openings and endings</span><br>
-                        <span class="child">Heya! Son Goku and Friends Return creditless ending</span><br>
-                        <span class="child">Dragon Ball Kai creditless openings and endings</span><br>
-                        <span class="child">Dragon Ball Kai trailers and teasers</span><br>
-                        <span class="child">Dragon Ball Heroes Promos</span><br>
-                        <span class="child">Jaco the Galactic Patrolman Voice Comic</span><br>
-                        <span class="child">Dragon Ball Super creditless openings and endings</span><br>
-                        <span class="child">History of Japan</span><br>
-                    </p>
-                    <p>Others<br>
-                        <span class="child">True Plan to Eradicate the Saiyans</span><br>
-                        <span class="grandchild">Record the game's footage</span><br>
-                        <span class="grandchild">Rip the game's footage</span><br>
-                        <span class="grandchild">Splice and organize currently available footage</span><br>
-                        <span class="grandchild">Subtitle</span><br>
-                        <span class="child">Toriko × One Piece × Dragon Ball Z — Super Collaboration
+                        <span class="child">Integral recording of True Plan to Eradicate the Saiyans</span><br>
+                        <span class="child">Proper release of Toriko × One Piece × Dragon Ball Z — Super Collaboration
                             Special!!</span><br>
-                        <span class="grandchild">Rework the special using best available footage</span><br>
+
+                        <span class="child">No credits endings for DBZ movies 10, 11, 12 and 13</span><br>
+                        <span class="child">No credits ending for Broli movie</span><br>
+                    </p>
+                    <p>Editing<br>
+                        <span class="child">Split Dragon Ball Movies openings from endings</span><br>
+                        <span class="child">Re-work Dragon Ball Kai trailers and teasers</span><br>
                     </p>
                 </div>
+                <div class="ui bottom attached tab segment blue-gradient no-border yellow-text" data-tab="audio">
+                    <p>
+                        Dragon Ball Movies<br>
+                        <span class="child">Sync Laserdisc tracks</span><br>
+                        <span class="child">Sync Drama cassette for "Clash!! 10,000,000,000 Powerful
+                            Warriors"</span><br>
+                        <span class="child">Sync Drama CD track for "Super-Warrior Defeat!! I’m the One Who’ll
+                            Win"</span><br>
+                    </p>
+                    <p>
+                        Dragon Ball Z no credits openings and endings<br>
+                        <span class="child">Sync CD tracks</span><br>
+                    </p>
+                    <p>
+                        Dragon Ball Movies no credits openings and endings<br>
+                        <span class="child">Sync CD tracks</span>
+                    </p>
+                    <p>
+                        Dragon Ball GT no credits openings and endings<br>
+                        <span class="child">Sync CD tracks</span><br>
+                    </p>
+                </div>
+                <div class="ui bottom attached tab segment blue-gradient no-border yellow-text" data-tab="subtitle">
+                    <p>
+                        Normal<br>
+                        <span class="child">Dragon Ball Kai trailers and teasers</span><br>
+                        <span class="child">"Jaco the Galactic Patrolman" Voice Comic</span><br>
+                        <span class="child">"History of Japan"</span><br>
+                    </p>
+                    <p>
+                        Music Video<br>
+                        <span class="child">Dragon Ball Z no credits openings and endings</span><br>
+                        <span class="child">Dragon Ball Movies no credits openings and endings</span><br>
+                        <span class="child">Dragon Ball GT no credits openings and endings</span><br>
+                        <span class="child">"Heya! Son Goku and Friends Return" no credits ending</span><br>
+                        <span class="child">Dragon Ball Kai no credits openings and endings</span><br>
+                        <span class="child">Dragon Ball Super no credits openings and endings</span><br>
+                    </p>
+
+
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
-        <h4>
-            &rarr;
+        <h3>
+            >
             <a href="https://discord.gg/xpE3r77" target="_blank">Join our Discord server</a>
-            &larr;
-        </h4>
+            < </h3>
     </footer>
+    <script src="script/jquery.js"></script>
+    <script src="script/semantic.js"></script>
+    <script src="script/dragonbox.js"></script>
 </body>
