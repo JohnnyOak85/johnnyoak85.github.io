@@ -12,22 +12,22 @@
     <title>Dragon Box Archives</title>
 </head>
 
-<body>
-    <main>
+<body style="background: linear-gradient(#f85b1a, #202020);">
+    <main style="margin: 2em;">
         <div class="ui grid">
             <div class="four wide column">
-                <div class="ui card">
-                    <div class="content blue-gradient">
-                        <div class="header yellow-text">Welcome to Dragon Box Archives!</div>
-                        <div class="description yellow-text">
+                <div class="ui card" style="box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);">
+                    <div class="content" style="background: linear-gradient(#072083, #303030);">
+                        <div class="header" style="color: #fbe20b;">Welcome to Dragon Box Archives!</div>
+                        <div class="description" style="color: #fbe20b;">
                             A community of Dragon Ball fans looking for the best footage available out there!<br>
                             There's various projects across teams and servers to ensure the best releases.
                         </div>
                     </div>
                 </div>
                 <img class="ui fluid image" src="./resources/logos/kame.webp" alt="Kame">
-                <div class="ui card">
-                    <div class="content blue-gradient yellow-text">
+                <div class="ui card" style="box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);">
+                    <div class="content" style="background: linear-gradient(#072083, #303030); color: #fbe20b;">
                         > <a href="http://matela.stronazen.pl/" target="_blank">Dragon Ball Cassette Tape
                             Archive</a><br>
                         > <a href="https://nwoscans.wordpress.com/" target="_blank">Dragon Ball Doujinshi Archive</a>
@@ -36,18 +36,18 @@
 
             </div>
             <div class="twelve wide column">
-                <div class="ui top attached tabular menu no-border blue-transparent">
-                    <div class="active item no-border yellow-text" data-tab="current">Current Projects
+                <div class="ui top attached tabular menu" style="border: none; background: rgba(7, 32, 131, 0.6);">
+                    <div class="active item" data-tab="current" style="border: none; color: #fbe20b;">Current Projects
                     </div>
-                    <div class="item no-border yellow-text" data-tab="video">Video Editing Projects
+                    <div class="item" data-tab="video" style="border: none; color: #fbe20b;">Video Editing Projects
                     </div>
-                    <div class="item no-border yellow-text" data-tab="audio">Audio Syncing Projects
+                    <div class="item" data-tab="audio" style="border: none; color: #fbe20b;">Audio Syncing Projects
                     </div>
-                    <div class="item no-border yellow-text" data-tab="subtitle">Subtitling Projects
+                    <div class="item" data-tab="subtitle" style="border: none; color: #fbe20b;">Subtitling Projects
                     </div>
                 </div>
-                <div class="ui bottom attached active tab segment blue-gradient no-border yellow-text"
-                    data-tab="current">
+                <div class="ui bottom attached active tab segment"
+                    data-tab="current" style="background: linear-gradient(#072083, #303030); border: none; color: #fbe20b;">
                     <p>
                         Video Game animated cutscenes - DNA<br>
                         <span class="child">Currently subtitling</span><br>
@@ -71,7 +71,7 @@
                         <span class="child">Archiving all tape albums.</span>
                     </p>
                 </div>
-                <div class="ui bottom attached tab segment blue-gradient no-border yellow-text" data-tab="video">
+                <div class="ui bottom attached tab segment" data-tab="video" style="background: linear-gradient(#072083, #303030); border: none; color: #fbe20b;">
                     <p>Recording<br>
                         <span class="child">Dragon Ball Z Year End TV Special</span><br>
                         <span class="child">Integral recording of True Plan to Eradicate the Saiyans</span><br>
@@ -86,7 +86,7 @@
                         <span class="child">Re-work Dragon Ball Kai trailers and teasers</span><br>
                     </p>
                 </div>
-                <div class="ui bottom attached tab segment blue-gradient no-border yellow-text" data-tab="audio">
+                <div class="ui bottom attached tab segment" data-tab="audio" style="background: linear-gradient(#072083, #303030); border: none; color: #fbe20b;">
                     <p>
                         Dragon Ball Movies<br>
                         <span class="child">Sync Laserdisc tracks</span><br>
@@ -108,7 +108,7 @@
                         <span class="child">Sync CD tracks</span><br>
                     </p>
                 </div>
-                <div class="ui bottom attached tab segment blue-gradient no-border yellow-text" data-tab="subtitle">
+                <div class="ui bottom attached tab segment" data-tab="subtitle" style="background: linear-gradient(#072083, #303030); border: none; color: #fbe20b;">
                     <p>
                         Normal<br>
                         <span class="child">Dragon Ball Kai trailers and teasers</span><br>
@@ -138,5 +138,5 @@
     </footer>
     <script src="script/jquery.js"></script>
     <script src="script/semantic.js"></script>
-    <script src="script/dragonbox.js"></script>
+    <script>$('.tabular.menu .item').tab();</script>
 </body>

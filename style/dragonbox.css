@@ -1,33 +1,5 @@
-body {
-  background: linear-gradient(#f85b1a, #202020);
-}
-
-main {
-  margin: 2em;
-}
-
-.card {
-  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4) !important;
-}
-
-.blue-gradient {
-  background: linear-gradient(#072083, #303030) !important;
-}
-
-.no-border {
-  border: none !important;
-}
-
-.blue-transparent {
-  background: rgba(7, 32, 131, 0.6) !important;
-}
-
 .active {
   background-color: #072083 !important;
-}
-
-.yellow-text {
-  color: #fbe20b !important;
 }
 
 .child {
