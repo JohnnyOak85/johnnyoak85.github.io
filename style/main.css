@@ -28,10 +28,14 @@ header {
   height: 100vh;
   margin-bottom: 10vh;
   padding-top: 10vh;
-  background: url("../resources/background/image.png") repeat 0 0;
+  background: url("../resources/background/bg.png") repeat 0 0;
   background-position: left;
   text-align: center;
   animation: slide 20s linear infinite;
+}
+
+#bio {
+  color: blanchedalmond;
 }
 
 h1 {
