@@ -19,16 +19,16 @@
         background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-decoration: none;
-        transition: all 0.3s ease-in;
     }
     nav a:active {
         top: 2px;
         box-shadow: none;
     }
     nav a:hover {
-        color: #DFE1FB;
+        color: #dfe1fb;
         transition: all 0.3s ease-in;
     }
+    
     /* Header Area */
     header {
         margin-bottom: 25vh;

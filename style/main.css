@@ -28,7 +28,7 @@ header {
   height: 100vh;
   margin-bottom: 10vh;
   padding-top: 10vh;
-  background: url("../resources/background/bg.png") repeat 0 0;
+  background: url("../resources/images/background.webp") repeat 0 0;
   background-position: left;
   text-align: center;
   animation: slide 20s linear infinite;
@@ -104,13 +104,13 @@ h5 {
   margin-left: -5vh;
 }
 
-.skillset {
+.skills {
   display: grid;
   grid-template-columns: 50% 50%;
   margin-left: 15vw;
 }
 
-.skillset p {
+.skills p {
   font-style: initial;
 }
 
@@ -142,6 +142,39 @@ footer a {
 .contact-logo {
   width: 35px;
   vertical-align: middle;
+}
+
+#bottom {
+  width: 100vw;
+  margin-bottom: 15vh;
+  padding-top: 5vh;
+  animation: fish-slide 50s linear infinite;
+}
+
+#angler {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes fish-slide {
+  0% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+    
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 #secret {
