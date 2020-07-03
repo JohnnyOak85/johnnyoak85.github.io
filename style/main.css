@@ -28,7 +28,7 @@ header {
   height: 100vh;
   margin-bottom: 10vh;
   padding-top: 10vh;
-  background: url("../resources/images/background.webp") repeat 0 0;
+  background: url("../resources/images/bg.png") repeat 0 0;
   background-position: left;
   text-align: center;
   animation: slide 20s linear infinite;
@@ -181,4 +181,5 @@ footer a {
   display: flex;
   justify-content: center;
   padding-bottom: 1vh;
+  background: url("../resources/images/desert.png") repeat 0% 60%;
 }
