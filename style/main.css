@@ -35,7 +35,9 @@ header {
 }
 
 #bio {
-  color: blanchedalmond;
+  color: #f4c8ab;
+  text-shadow: -1px -1px 0 #3e2007, 1px -1px 0 #3e2007, -1px 1px 0 #3e2007,
+    1px 1px 0 #3e2007;
 }
 
 h1 {
@@ -139,6 +141,15 @@ footer a {
   color: #e8e4c9;
 }
 
+footer span {
+  display: none;
+}
+
+footer h3 {
+  color: gold;
+  padding-left: 10vw;
+}
+
 .contact-logo {
   width: 35px;
   vertical-align: middle;
@@ -149,6 +160,7 @@ footer a {
   margin-bottom: 15vh;
   padding-top: 5vh;
   animation: fish-slide 50s linear infinite;
+  z-index: 1;
 }
 
 #angler {
@@ -170,7 +182,6 @@ footer a {
   }
   50% {
     transform: translateY(-30px);
-    
   }
   100% {
     transform: translateY(0px);
