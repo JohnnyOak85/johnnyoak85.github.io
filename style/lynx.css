@@ -117,32 +117,29 @@
     padding-left: initial;
   }
 
-  /* Footer */
-
-  footer {
-    grid-area: initial;
-    height: initial;
-    padding-top: 3vh;
-    padding-bottom: initial;
-    padding-left: initial;
-    padding-right: initial;
-    font-size: initial;
+  #contacts {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: xx-small;
   }
 
-  footer a {
-    display: initial;
-    padding-bottom: initial;
-    text-decoration: initial;
-    color: blue;
+  #contacts a {
+    text-decoration: none;
+    color: #e8e4c9;
+    width: fit-content;
   }
 
-  footer span {
-    display: inline;
+  #contacts span {
+    display: none;
   }
 
   .contact-logo {
     display: none;
   }
+
+  /* Extra */
 
   #bottom {
     display: none;

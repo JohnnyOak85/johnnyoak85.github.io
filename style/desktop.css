@@ -68,22 +68,16 @@
     margin-left: 10vw;
   }
 
-  /* Footer */
-
-  footer {
-    height: 100vh;
-    padding-top: 40vh;
-    padding-left: 40vw;
+  #contacts {
     font-size: initial;
   }
 
-  footer h3 {
-      padding-left: 5vw;
+  #contacts a {
+    padding-bottom: 5%;
   }
 
-
-  footer a {
-    padding-bottom: 5%;
+  #donation {
+    padding-top: 40vh;
   }
 
   .contact-logo {

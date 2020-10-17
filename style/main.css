@@ -20,7 +20,7 @@ nav {
   display: none;
 }
 
-/* Header Area */
+/* Header */
 
 header {
   grid-area: header;
@@ -61,7 +61,7 @@ h1 {
   }
 }
 
-/* Main Content Area */
+/* Main Content */
 
 main {
   grid-area: main;
@@ -124,36 +124,34 @@ h5 {
   padding-left: 15vw;
 }
 
-/* Footer Area */
-
-footer {
-  grid-area: footer;
+#contacts {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  padding-left: 25vw;
+  padding-left: 15vw;
   padding-right: 15vw;
   font-size: xx-small;
 }
 
-footer a {
-  display: block;
+#contacts a {
   text-decoration: none;
   color: #e8e4c9;
+  width: fit-content;
 }
 
-footer span {
+#contacts span {
   display: none;
-}
-
-footer h3 {
-  color: gold;
-  padding-left: 10vw;
 }
 
 .contact-logo {
   width: 35px;
   vertical-align: middle;
 }
+
+#donation {
+  text-align: center;
+}
+
+/* Extra */
 
 #bottom {
   width: 100vw;
