@@ -1,0 +1,162 @@
+@media only screen and (min-height: 1024px) and (min-width: 768px) {
+  * {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  body {
+    margin: 1rem;
+    width: 90vw;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    background-color: black;
+    background-image: none;
+    color: white;
+  }
+
+  /* Navigation Bar */
+
+  nav {
+    display: none;
+  }
+
+  /* Header */
+
+  header {
+    grid-area: initial;
+    width: initial;
+    height: initial;
+    margin-bottom: initial;
+    padding-top: initial;
+    background: initial;
+    text-align: initial;
+  }
+
+  #intro {
+    display: initial;
+    grid-template-columns: initial;
+  }
+
+  #bio {
+    color: white;
+    text-shadow: initial;
+  }
+
+  h1 {
+    text-align: initial;
+  }
+
+  h1,
+  h3 {
+    color: #008f11;
+  }
+
+  #photo {
+    display: none;
+  }
+
+  img {
+    display: none;
+  }
+
+  /* Main Content */
+
+  main {
+    grid-area: initial;
+    overflow: initial;
+    display: initial;
+    font-size: initial;
+    color: white;
+  }
+
+  section {
+    display: initial;
+    margin-bottom: initial;
+    margin-left: initial;
+    margin-right: initial;
+    padding-top: initial;
+    text-align: initial;
+  }
+
+  section h3 {
+    text-align: initial;
+  }
+
+  section a {
+    color: blue;
+  }
+
+  hr {
+    display: none;
+  }
+
+  article p {
+    margin-top: initial;
+    font-style: initial;
+  }
+
+  article h4,
+  h5 {
+    margin-bottom: initial;
+  }
+
+  #right-column {
+    margin-left: initial;
+  }
+
+  .skills {
+    display: initial;
+    grid-template-columns: initial;
+    margin-left: initial;
+  }
+
+  .skills p {
+    font-style: initial;
+  }
+
+  #certifications article {
+    padding-left: initial;
+  }
+
+  /* Footer */
+
+  footer {
+    grid-area: initial;
+    height: initial;
+    padding-top: 3vh;
+    padding-bottom: initial;
+    padding-left: initial;
+    padding-right: initial;
+    font-size: initial;
+  }
+
+  footer a {
+    display: initial;
+    padding-bottom: initial;
+    text-decoration: initial;
+    color: blue;
+  }
+
+  footer span {
+    display: inline;
+  }
+
+  .contact-logo {
+    display: none;
+  }
+
+  #bottom {
+    display: none;
+  }
+
+  #secret {
+    display: none;
+  }
+
+  a {
+    color: blue;
+  }
+
+  a:hover {
+    color: yellow;
+  }
+}
