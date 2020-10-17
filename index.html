@@ -1,12 +1,14 @@
 ﻿<!--
     Oh hey there fellow developer!
     Yeah, everything here is just HTML and fancy CSS tricks.
-    If you're into Dragon Ball, there's a secret at the end of the page!
+    If you have a portrait monitor, try opening my page there for an easter egg.
  -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta name="description" content="Profile and portfolio page of a cheerful and quirky programmer.">
     <meta name="keywords"
@@ -15,17 +17,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="LVa2sCekGK-ZNHTeuNZ0IhE77LsKMPYeRad2UBMrDkM" />
     <meta http-equiv="Cache-Control" content="public, max-age=<2592000>, must-revalidate" />
+
+    <!-- Style Sheets -->
     <link type="text/css" rel="stylesheet" href="style/main.css" />
     <link type="text/css" rel="stylesheet" href="style/desktop.css" />
+    <link type="text/css" rel="stylesheet" href="style/lynx.css">
     <link rel="icon" href="resources/icons/acorn.ico" type="image/x-icon">
+
+    <!-- Title -->
     <title>Jo&atilde;o Carvalho - Full Stack Developer</title>
 </head>
 
 <body>
 
+    <!-- Main header -->
     <header>
         <section id="intro">
-            <div>
+            <div id="photo">
                 <img id="oculus" src="resources/images/photo.png" alt="Profile photo"><br>
             </div>
             <article id="bio">
@@ -40,6 +48,7 @@
         </section>
     </header>
 
+    <!-- Navigation Bar -->
     <nav>
         <a href="#skills">SKILLS</a>
         <a href="#experience">EXPERIENCE</a>
@@ -49,6 +58,7 @@
         <a href="#contacts">CONTACTS</a>
     </nav>
 
+    <!-- Skills -->
     <main>
         <section id="skills">
             <h3>STRENGTHS & WEAKNESSES</h3>
@@ -69,9 +79,6 @@
                     MySQL<br>
                     CouchDB<br>
                     CSS<br>
-                    SASS<br>
-                    Semantic<br>
-                    Bootstrap<br>
                     HTML<br>
                     Markdown<br>
                     Git<br>
@@ -101,6 +108,8 @@
                 </div>
             </article>
         </section>
+
+        <!-- Experience -->
         <section id="experience">
             <h3>EXPERIENCE</h3>
             <article>
@@ -153,6 +162,8 @@
                 <a href="http://acneuro.pt/" target="_blank">ACN</a>
             </article>
         </section>
+
+        <!-- Education -->
         <section id="education">
             <h3>EDUCATION</h3>
             <article>
@@ -186,8 +197,20 @@
                 <a href="http://www.esar.edu.pt/portal/" target="_blank">Escola Secund&aacute;ria Alves Redol</a>
             </article>
         </section>
+
+        <!-- Projects -->
         <section id="projects">
             <h3>PROJECTS</h3>
+            <article>
+                <h4>Hyrule Warriors Maps</h4>
+                <p>September 2020 to Present</p>
+                I love the Legend of Zelda series. But the Hyrule Warriors games are very distinct from the usual, with
+                a lot of things to do and unlock. Being dissatisfied with the available guides, I decided to take
+                matters into my own hands and make my own guide app.<br>
+                Using a Ionic Angular base, I've constructed a simple app that facilitates navigation through each in
+                game map.
+                <a href="https://github.com/JohnnyOak85/HyruleWarriorsApp" target="_blank">See project</a>
+            </article>
             <article>
                 <h4>ToriBot</h4>
                 <p>April 2020 to Present</p>
@@ -201,7 +224,7 @@
             </article>
             <article>
                 <h4>Profile Page</h4>
-                <p>August 2019 to Present</p>
+                <p>August 2019 to August 2020</p>
                 A place made by myself where I can show my skills, experiences and portfolio. And you're viewing it
                 right now! Been avoiding using JavaScript and styling frameworks. Instead I do my best to only use cool
                 CSS tricks.<br>
@@ -231,16 +254,6 @@
                 <hr>
             </article>
             <article>
-                <h4>JavaBank</h4>
-                <p>March 2019 to April 2019</p>
-                A demo that exemplifies how web apps function. As part of &lt;Academia de
-                C&oacute;digo_&gt;. Meant to teach us how to build an app from beginning to end,
-                constructing the user interface, client/server architecture, relational
-                databases and database transactions. Used a Java based back end, MySQL for the databases and with a
-                JavaScript front end.
-                <hr>
-            </article>
-            <article>
                 <h4>Asteroid Field</h4>
                 <p>February 2019</p>
                 A challenge to create a simple video game using our still limited Java knowledge.
@@ -250,6 +263,8 @@
                 <a href="https://github.com/JohnnyOak85/Asteroid-Field" target="_blank">See project</a>
             </article>
         </section>
+
+        <!-- Certifications -->
         <section id="certifications">
             <h3>CERTIFICATIONS</h3>
             <article>
@@ -277,28 +292,32 @@
         </section>
     </main>
 
+    <!-- Contacts -->
     <footer id="contacts">
+        <h3>CONTACTS</h3>
+        <span>E-Mail Address: </span>
         <a href="mailto:joao.mendes.carvalh@gmail.com" target="_blank">
-            <img class="contact-logo" src="resources/images/gmail.png" alt="Gmail Address">
-            joao.mendes.carvalh
+            <img class="contact-logo" src="resources/images/gmail.png" alt="Gmail">
+            joao.mendes.carvalh<br>
         </a>
+        <span>Code Repository: </span>
         <a href="https://github.com/JohnnyOak85" target="_blank">
-            <img class="contact-logo" src="resources/images/github.png" alt="GitHub Username">
-            JohnnyOak85
+            <img class="contact-logo" src="resources/images/github.png" alt="GitHub">
+            JohnnyOak85<br>
         </a>
+        <span>Social Media: </span>
         <a href="https://www.linkedin.com/in/joaopmcarvalho" target="_blank">
-            <img class="contact-logo" src="resources/images/linkedin.png" alt="LinkedIn Username">
-            joaopmcarvalho
+            <img class="contact-logo" src="resources/images/linkedin.png" alt="LinkedIn">
+            joaopmcarvalho<br>
         </a>
-
     </footer>
+
+    <!-- Extra -->
     <div id="bottom">
         <img id="angler" src="./resources/images/angler_fry.png" alt="Angler Fry">
     </div>
     <div id="secret">
-        <a href="./dragonbox.html" target="_blank">
-            <img class="contact-logo" src="resources/images/db.png" alt="Dragon Box Archives">
-        </a>
+        <img class="contact-logo" src="resources/images/db.png" alt="Si Xing Qiu">
     </div>
 </body>
 
