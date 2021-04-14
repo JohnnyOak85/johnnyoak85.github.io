@@ -10,7 +10,7 @@ body {
   margin: 0;
   width: 100%;
   display: grid;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: 'header' 'main' 'footer';
   background-image: linear-gradient(#04619f, #202020);
 }
 
@@ -28,7 +28,7 @@ header {
   height: 100vh;
   margin-bottom: 10vh;
   padding-top: 10vh;
-  background: url("../resources/images/bg.png") repeat 0 0;
+  background: url('../resources/images/bg.png') repeat 0 0;
   background-position: left;
   text-align: center;
   animation: slide 20s linear infinite;
@@ -190,5 +190,5 @@ h5 {
   display: flex;
   justify-content: center;
   padding-bottom: 1vh;
-  background: url("../resources/images/desert.png") repeat 0% 60%;
+  background: url('../resources/images/desert.png') repeat 0% 60%;
 }

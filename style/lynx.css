@@ -1,13 +1,13 @@
 @media only screen and (min-height: 1024px) and (min-width: 768px) {
   * {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   body {
     margin: 1rem;
     width: 90vw;
     display: grid;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: 'header' 'main' 'footer';
     background-color: black;
     background-image: none;
     color: white;
