@@ -1,0 +1,13 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding-left: 15px;
+    width: 100%;
+    color: #99FFFF;
+    background-image: linear-gradient(#8a0303, #202020);
+}
