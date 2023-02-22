@@ -1,244 +1,274 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <style>
-        /* Main working canvas, stylizes font and style of content */
+      /* Main working canvas, stylizes font and style of content */
 
-        * {
-            font-family: 'Courier New', Courier, monospace;
-            scroll-behavior: smooth;
-            overflow-x: hidden;
-        }
+      * {
+        font-family: "Courier New", Courier, monospace;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
 
-        body {
-            margin: 1rem;
-            width: 90vw;
-            display: grid;
-            grid-template-areas: 'header' 'main' 'footer';
-            background-color: black;
-            background-image: none;
-            color: white;
-        }
+      body {
+        margin: 1rem;
+        width: 90vw;
+        display: grid;
+        grid-template-areas: "header" "main" "footer";
+        background-color: black;
+        background-image: none;
+        color: white;
+      }
 
-        /* Header */
+      /* Header */
 
-        header {
-            background-position: left;
-        }
+      header {
+        background-position: left;
+      }
 
-        #bio {
-            color: white;
-        }
+      #bio {
+        color: white;
+      }
 
-        h1,
-        h3 {
-            color: #008f11;
-        }
+      h1,
+      h3 {
+        color: #008f11;
+      }
 
-        /* Main Content */
+      /* Main Content */
 
-        article {
-            margin-top: -5;
-        }
+      article {
+        margin-top: -5;
+      }
 
-        main {
-            color: white;
-        }
+      main {
+        color: white;
+      }
 
-        section a {
-            color: blue;
-        }
+      section a {
+        color: blue;
+      }
 
-        #certifications article {
-            padding-left: 15vw;
-        }
+      #certifications article {
+        padding-left: 15vw;
+      }
 
-        #contacts {
-            padding-right: 15vw;
-        }
+      #contacts {
+        padding-right: 15vw;
+      }
 
-        #contacts a {
-            text-decoration: none;
-            color: blue;
-            width: fit-content;
-        }
+      #contacts a {
+        text-decoration: none;
+        color: blue;
+        width: fit-content;
+      }
 
-        #contacts span {
-            display: none;
-        }
-
+      #contacts span {
+        display: none;
+      }
     </style>
 
     <!-- Title -->
     <title>Jo&atilde;o Carvalho - Full Stack Developer</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Main header -->
     <header>
-        <section id="intro">
-            <article id="bio">
-                <h1>Jo&atilde;o Carvalho</h1>
-                <h3>Full Stack Developer</h3>
-                Hello! Welcome to my CV! You can check an online, interactive version of it
-                <a href="https://johnnyoak85.github.io/" target="_blank"> here!<br> </a>
-                As for me, I'm a lover of all forms of art and to me, programming is also a form of art. Creating
-                something cool out of that black canvas is a really rewarding experience.
-                Being persistent and an early bird means I will start strong and not rest until I find a solution that
-                satisfies me.
-            </article>
-        </section>
+      <section id="intro">
+        <article id="bio">
+          <h1>Jo&atilde;o Carvalho</h1>
+          <h3>Full Stack Developer</h3>
+          Hello! Welcome to my CV! You can check an online, interactive version
+          of it
+          <a href="https://johnnyoak85.github.io/" target="_blank">
+            here!<br />
+          </a>
+          As for me, I'm a lover of all forms of art and to me, programming is
+          also a form of art. Creating something cool out of that black canvas
+          is a really rewarding experience. Being persistent and an early bird
+          means I will start strong and not rest until I find a solution that
+          satisfies me.
+        </article>
+      </section>
     </header>
 
     <!-- Skills -->
     <main>
-        <section id="skills">
-            <h3>STRENGTHS & WEAKNESSES</h3>
-            <h4>Tech Skills</h4>
-            JavaScript<br>
-            TypeScript<br>
-            Node<br>
-            Hapi<br>
-            Angular<br>
-            React<br>
-            Ionic<br>
-            Electron<br>
-            CouchDB<br>
-            CSS<br>
-            HTML<br>
-            Markdown<br>
-            Git<br>
-            <h4>Industry Skills</h4>
-            Team Leadership<br>
-            Scrum<br>
-            Kanban
-            <h4>Languages</h4>
-            Portuguese<br>
-            English
-        </section>
+      <section id="skills">
+        <h3>STRENGTHS & WEAKNESSES</h3>
+        <h4>Tech Skills</h4>
+        JavaScript<br />
+        TypeScript<br />
+        Node<br />
+        Hapi<br />
+        Angular<br />
+        React<br />
+        Ionic<br />
+        Electron<br />
+        CouchDB<br />
+        Redis<br />
+        CSS<br />
+        HTML<br />
+        Markdown<br />
+        Git<br />
+        <h4>Industry Skills</h4>
+        Team Leadership<br />
+        Scrum<br />
+        Kanban
+        <h4>Languages</h4>
+        Portuguese<br />
+        English
+      </section>
 
-        <!-- Experience -->
-        <section id="experience">
-            <h3>EXPERIENCE</h3>
-            <h4>Full Stack Developer</h4>
-            May 2022 - Present<br>
-            Currently part of a team of developers tinkering away back where it all started, improving the apps at
-            &lt;Code for All_&gt;.
-            Main technologies used are JavaScript, Node, React and Redux.<br>
-            <a href="https://bool.pt/" target="_blank">Bool</a>
+      <!-- Experience -->
+      <section id="experience">
+        <h3>EXPERIENCE</h3>
+        <h4>Full Stack Developer</h4>
+        May 2022 - Present<br />
+        Currently part of a team of developers tinkering away back where it all
+        started, improving the apps at &lt;Code for All_&gt;. Main technologies
+        used are JavaScript, Node, React and Redux.<br />
+        <a href="https://bool.pt/" target="_blank">Bool</a>
 
-            <h4>Team Leader && Git Master</h4>
-            September 2020 - March 2022 <br>
-            Led a team developing solutions for insurance companies like Ageas, Montepio,
-            Liberty and VIG. Reviewing and versioning our repositories.<br>
-            <a href="https://www.itc.pt/" target="_blank">ITC</a>
+        <h4>Team Leader && Git Master</h4>
+        September 2020 - March 2022 <br />
+        Led a team developing solutions for insurance companies like Ageas,
+        Montepio, Liberty and VIG. Reviewing and versioning our repositories.<br />
+        <a href="https://www.itc.pt/" target="_blank">ITC</a>
 
-            <h4>Full Stack Developer</h4>
-            August 2019 - March 2022 <br>
-            Maintaining and optimizing our API and applications as well as developing new features.
-            Was responsible for implementing authentication, password and permission systems.
-            Using technologies like TypeScript, Node, Angular, Ionic and Electron, with CouchDB being used to
-            maintain our database.<br>
-            <a href="https://www.itc.pt/" target="_blank">ITC</a>
+        <h4>Full Stack Developer</h4>
+        August 2019 - March 2022 <br />
+        Maintaining and optimizing our API and applications as well as
+        developing new features. Was responsible for implementing
+        authentication, password and permission systems. Using technologies like
+        TypeScript, Node, Angular, Ionic and Electron, with CouchDB being used
+        to maintain our database.<br />
+        <a href="https://www.itc.pt/" target="_blank">ITC</a>
 
-            <h4>Postal Worker</h4>
-            September 2016 - September 2018 <br>
-            Tasked with mail and package distribution across two postal areas, this position gave
-            me a great sense of responsibility and direction. Other tasks included cash
-            transactions and data entry.<br>
-            <a href="https://www.ctt.pt/home/index.html" target="_blank">CTT</a>
+        <h4>Postal Worker</h4>
+        September 2016 - September 2018 <br />
+        Tasked with mail and package distribution across two postal areas, this
+        position gave me a great sense of responsibility and direction. Other
+        tasks included cash transactions and data entry.<br />
+        <a href="https://www.ctt.pt/home/index.html" target="_blank">CTT</a>
 
-            <h4>Team Leader</h4>
-            July 2015 - July 2016 <br>
-            Led a team of direct marketing experts, coaching them on how to deal with clients, how to build
-            presentations and motivating them in their goals. Very rewarding position in terms of personal
-            growth, both mine and my team's.<br>
-            <a href="http://acneuro.pt/" target="_blank">ACN</a>
+        <h4>Team Leader</h4>
+        July 2015 - July 2016 <br />
+        Led a team of direct marketing experts, coaching them on how to deal
+        with clients, how to build presentations and motivating them in their
+        goals. Very rewarding position in terms of personal growth, both mine
+        and my team's.<br />
+        <a href="http://acneuro.pt/" target="_blank">ACN</a>
 
-            <h4>Direct Marketing Expert</h4>
-            December 2014 - May 2015 <br>
-            Worked directly with companies like Virgin, Securitas and JOi Telecom, dealing
-            with various people face to face presenting them new opportunities. An enriching experience that
-            taught me a lot about how to present myself to others.<br>
-            <a href="http://acneuro.pt/" target="_blank">ACN</a>
-        </section>
+        <h4>Direct Marketing Expert</h4>
+        December 2014 - May 2015 <br />
+        Worked directly with companies like Virgin, Securitas and JOi Telecom,
+        dealing with various people face to face presenting them new
+        opportunities. An enriching experience that taught me a lot about how to
+        present myself to others.<br />
+        <a href="http://acneuro.pt/" target="_blank">ACN</a>
+      </section>
 
-        <!-- Education -->
-        <section id="education">
-            <h3>EDUCATION</h3>
-            <h4>Full Stack Programming Bootcamp</h4>
-            January 2019 - April 2019 <br>
-            A 14 week intensive and immersive full stack programming bootcamp with emphasis on Java and
-            JavaScript. Used technologies like intelliJ, Git and Unix; frameworks like Spring, Hibernate and
-            Bootstrap and methodologies like Scrum and Kanban.
-            Learned a lot of new things about team work, presentations, motivation and above all had a lot of
-            fun doing it!<br>
-            <a href="https://www.codeforall.io/" target="_blank">&lt;Code for All_&gt;</a>
+      <!-- Education -->
+      <section id="education">
+        <h3>EDUCATION</h3>
+        <h4>Full Stack Programming Bootcamp</h4>
+        January 2019 - April 2019 <br />
+        A 14 week intensive and immersive full stack programming bootcamp with
+        emphasis on Java and JavaScript. Used technologies like intelliJ, Git
+        and Unix; frameworks like Spring, Hibernate and Bootstrap and
+        methodologies like Scrum and Kanban. Learned a lot of new things about
+        team work, presentations, motivation and above all had a lot of fun
+        doing it!<br />
+        <a href="https://www.codeforall.io/" target="_blank"
+          >&lt;Code for All_&gt;</a
+        >
 
-            <h4>Computer Science Certification</h4>
-            June 2003 - September 2007 <br>
-            A technical course, focused on the basis of computer science, going through the history of
-            computing
-            and its technologies, foundations of programming by learning Pascal and Basic and using computer
-            applications like Word, Excel and Access.<br>
-            <a href="http://www.esar.edu.pt/portal/" target="_blank">Escola Secund&aacute;ria Alves Redol</a>
-        </section>
+        <h4>Computer Science Certification</h4>
+        June 2003 - September 2007 <br />
+        A technical course, focused on the basis of computer science, going
+        through the history of computing and its technologies, foundations of
+        programming by learning Pascal and Basic and using computer applications
+        like Word, Excel and Access.<br />
+        <a href="http://www.esar.edu.pt/portal/" target="_blank"
+          >Escola Secund&aacute;ria Alves Redol</a
+        >
+      </section>
 
-        <!-- Projects -->
-        <section id="projects">
-            <h3>PROJECTS</h3>
+      <!-- Projects -->
+      <section id="projects">
+        <h3>PROJECTS</h3>
 
-            <h4>Artemis</h4>
-            January 2023 - Present<br>
-            Artemis is my personal bot. So far used for Discord but potentially can be used for more in the
-            future.<br>
-            Its speech module allows artemis to automatically respond of react to certain key words and also reply
-            if mentioned. Besides an 8-ball style functionality where it may answer a question with a vague
-            answer.<br>
-            <a href="https://github.com/JohnnyOak85/artemis-speech" target="_blank">See module</a><br>
-            Its reminder module saves up certain dates with events that it will send to the Discord server when the
-            time comes.<br>
-            <a href="https://github.com/JohnnyOak85/artemis-reminder" target="_blank">See module</a><br>
-            There is also Tales of Murwelgrave, an RPG style text based game where players can interact with
-            monsters and start an RNG focused battle.
-            More modules to come.<br>
-            <a href="https://github.com/JohnnyOak85/Tales-of-Murwelgrave" target="_blank">See module</a><br>
-            Built in Discord.js and TypeScript.<br>
+        <h4>Artemis</h4>
+        January 2022 - Present<br />
+        Artemis is my personal bot. So far used for Discord but potentially can
+        be used for more in the future.<br />
+        Its speech module allows artemis to automatically respond of react to
+        certain key words and also reply if mentioned. Besides an 8-ball style
+        functionality where it may answer a question with a vague answer.<br />
+        <a href="https://github.com/JohnnyOak85/artemis-speech" target="_blank"
+          >See module</a
+        ><br />
+        Its reminder module saves up certain dates with events that it will send
+        to the Discord server when the time comes.<br />
+        <a
+          href="https://github.com/JohnnyOak85/artemis-reminder"
+          target="_blank"
+          >See module</a
+        ><br />
+        There is also Tales of Murwelgrave, an RPG style text based game where
+        players can interact with monsters and start an RNG focused battle. More
+        modules to come.<br />
+        <a
+          href="https://github.com/JohnnyOak85/Tales-of-Murwelgrave"
+          target="_blank"
+          >See module</a
+        ><br />
+        Built in Discord.js and TypeScript.<br />
 
-            <h4>Hyrule Warriors Definitive App</h4>
-            September 2020 - June 2021 <br>
-            I love the Legend of Zelda series. But Hyrule Warriors is a very distinct entry in the franchise, with
-            a lot of things to do and unlock. Being dissatisfied with the available guides, I decided to take
-            matters into my own hands and make my own guide app.<br>
-            Using a Ionic Angular base, I've constructed a simple app that facilitates navigation through each
-            game map.<br>
-            <a href="https://github.com/JohnnyOak85/HyruleWarriorsApp" target="_blank">See project</a><br>
+        <h4>Hyrule Warriors Definitive App</h4>
+        September 2020 - June 2021 <br />
+        I love the Legend of Zelda series. But Hyrule Warriors is a very
+        distinct entry in the franchise, with a lot of things to do and unlock.
+        Being dissatisfied with the available guides, I decided to take matters
+        into my own hands and make my own guide app.<br />
+        Using a Ionic Angular base, I've constructed a simple app that
+        facilitates navigation through each game map.<br />
+        <a
+          href="https://github.com/JohnnyOak85/HyruleWarriorsApp"
+          target="_blank"
+          >See project</a
+        ><br />
 
-            <h4>Profile Page</h4>
-            August 2019 - November 2020 <br>
-            Having a physical CV is cool and all, but why not make my own online interactive CV? I avoided using any
-            scripts or styling frameworks. Instead I did my best to only use HTML and cool CSS tricks.<br>
-            <a href="https://github.com/JohnnyOak85/JohnnyOak85.github.io" target="_blank">See project</a>
-        </section>
+        <h4>Profile Page</h4>
+        August 2019 - November 2020 <br />
+        Having a physical CV is cool and all, but why not make my own online
+        interactive CV? I avoided using any scripts or styling frameworks.
+        Instead I did my best to only use HTML and cool CSS tricks.<br />
+        <a
+          href="https://github.com/JohnnyOak85/JohnnyOak85.github.io"
+          target="_blank"
+          >See project</a
+        >
+      </section>
 
-        <section id="contacts">
-            <h3>CONTACTS</h3>
-            <a href="mailto:joao.cmp@proton.me" target="_blank">
-                joao.cmp<br>
-            </a>
-            <a href="https://github.com/JohnnyOak85" target="_blank">
-                JohnnyOak85<br>
-            </a>
-            <a href="https://www.linkedin.com/in/joaopmcarvalho" target="_blank">
-                joaopmcarvalho<br>
-            </a>
-            <a href="https://discordapp.com/users/349627151957622786" target="_blank">
-                JohnnyOak<br>
-            </a>
-        </section>
+      <section id="contacts">
+        <h3>CONTACTS</h3>
+        <a href="mailto:joao.cmp@proton.me" target="_blank"> joao.cmp<br /> </a>
+        <a href="https://github.com/JohnnyOak85" target="_blank">
+          JohnnyOak85<br />
+        </a>
+        <a href="https://www.linkedin.com/in/joaopmcarvalho" target="_blank">
+          joaopmcarvalho<br />
+        </a>
+        <a
+          href="https://discordapp.com/users/349627151957622786"
+          target="_blank"
+        >
+          JohnnyOak<br />
+        </a>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
