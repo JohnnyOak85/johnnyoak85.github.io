@@ -147,6 +147,15 @@ h5 {
   vertical-align: middle;
 }
 
+.skill-logo {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.skill-stack {
+  font-weight: bold;
+}
+
 #donation {
   text-align: center;
 }
