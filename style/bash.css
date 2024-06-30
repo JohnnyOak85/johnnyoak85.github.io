@@ -1,0 +1,64 @@
+/* Main working canvas, stylizes font and style of content */
+
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  margin: 1rem;
+  width: 90vw;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1,
+h3 {
+  color: #008f11;
+}
+
+a {
+  text-decoration: none;
+  color: cyan;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  grid-area: main;
+  overflow: hidden;
+  display: grid;
+  color: gold;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 15vw;
+}
+
+.skill-stack {
+  font-weight: bold;
+}
+
+.certification {
+  margin-bottom: 1em;
+}
+
+#bio {
+  color: white;
+}
+
+/* Media Queries for Smartphones */
+@media only screen and (max-width: 600px) {
+  #skills {
+    margin-left: -15vw;
+  }
+}

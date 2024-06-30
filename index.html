@@ -1,21 +1,11 @@
-﻿<!--
-    Oh hey there fellow developer!
-    Yeah, everything here is just HTML and fancy CSS tricks.
-    If you have a portrait monitor, try opening my page there for an easter egg.
- -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta
-      name="description"
-      content="Profile and portfolio page of a cheerful and quirky programmer."
-    />
-    <meta
       name="keywords"
-      content="Web Developer, Programmer, Direct Marketing, Team Leader, Code Cadet, Java, Python, JavaScript, HTML, CSS, Git, MySQL, NoSQL, Game Maker"
+      content="Full Stack Developer, JavaScript Developer, TypeScript, React Developer, Redux, Ionic, Electron, Node.js, Hapi, Express.js, Joi, Jest, Discord.js, CouchDB, MongoDB, Redis, Git, Docker, Digital Ocean, Agile Project Management, Project Manager, Tech Leader, Team Leader, Git Master, Kanban Expert"
     />
     <meta name="author" content="João Carvalho" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,13 +15,34 @@
     />
     <meta
       http-equiv="Cache-Control"
-      content="public, max-age=<2592000>, must-revalidate"
+      content="public, max-age=2592000, must-revalidate"
     />
 
+    <!-- Open Graph -->
+    <meta
+      name="title"
+      property="og:title"
+      content="João Carvalho - Full Stack Developer"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="Experienced Full Stack Developer specializing in JavaScript and TypeScript technologies such as React, Redux, Node.js, and Express.js. Skilled in agile project management, with a strong background in frontend and backend development using modern frameworks and tools like Ionic, Electron, MongoDB, Redis, and Docker. Proven leadership as a Tech Leader and Team Leader, adept at Git version control and Kanban methodology. Ready to tackle complex technical challenges and drive innovation in software development."
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://example.com/path/to/your/image.jpg"
+    />
+    <meta property="og:image:alt" content="Profile photo" />
+    <meta property="og:url" content="https://johnnyoak85.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+
     <!-- Style Sheets -->
-    <link type="text/css" rel="stylesheet" href="style/main.css" />
-    <link type="text/css" rel="stylesheet" href="style/desktop.css" />
-    <link type="text/css" rel="stylesheet" href="style/lynx.css" />
+    <link rel="stylesheet" href="style/index.css" />
+
+    <!-- Icon -->
     <link rel="icon" href="resources/icons/acorn.ico" type="image/x-icon" />
 
     <!-- Title -->
@@ -39,464 +50,31 @@
   </head>
 
   <body>
-    <!-- Main header -->
     <header>
-      <section id="intro">
-        <div id="photo">
-          <img
-            id="oculus"
-            src="resources/images/photo.png"
-            alt="Profile photo"
-          /><br />
-        </div>
-        <article id="bio">
-          <h1>Jo&atilde;o Carvalho</h1>
-          <h3>Full Stack Developer</h3>
-          Hey there, I'm João Carvalho, a Full Stack Developer from sunny
-          Portugal. I approach programming as an art form, just like a
-          persistent early bird with a passion for creating something unique and
-          beautiful from scratch. With the determination of a certain
-          adamantium-clawed mutant and the adaptability of a pink puff ball from
-          the stars, I have acquired many coding skills like something out of a
-          question block, ranging from basic web languages like HTML and CSS to
-          more advanced frameworks such as React, Ionic, and Node. I have also
-          worked with databases like CouchDB and Redis. I might not carry a whip
-          or holy water, but my leadership skills are well-honed, having managed
-          development teams using agile methodologies like Scrum and Kanban. So
-          let's create something amazing together!
-        </article>
-      </section>
+      <img
+        src="resources/images/photo2.jpg"
+        alt="Header Image"
+        class="header-image"
+      />
+      <div class="text-block">
+        <p>
+          Hey there! I'm João Carvalho, a Full Stack Developer from sunny
+          Portugal. Programming is my passion and my canvas to unleash my inner
+          artist. I approach coding as an art form and won't stop until I've
+          created something unique and amazing.
+        </p>
+      </div>
     </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-      <a href="#skills">SKILLS</a>
-      <a href="#experience">EXPERIENCE</a>
-      <a href="#education">EDUCATION</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#certifications">CERTIFICATIONS</a>
-      <a href="#contacts">CONTACTS</a>
-    </nav>
-
-    <main>
-      <!-- Skills -->
-      <section id="skills">
-        <h3>STRENGTHS && WEAKNESSES</h3>
-        <article class="skills">
-          <div>
-            <h4>Tech Skills</h4>
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg"
-            />
-            Markdown<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-            />
-            HTML<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-            />
-            CSS<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            />
-            JavaScript<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-            />
-            TypeScript<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-            />
-            React<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
-            />
-            Redux<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg"
-            />
-            Angular<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ionic/ionic-original.svg"
-            />
-            Ionic<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg"
-            />
-            Electron<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
-            />
-            Node<br />
-            <img
-              class="skill-logo"
-              src="https://avatars.githubusercontent.com/u/3774533?s=200&v=4"
-            />
-            Hapi<br />
-            <img
-              class="skill-logo"
-              src="https://seeklogo.com/images/T/twilio-logo-341DD81BFB-seeklogo.com.png"
-            />
-            Twilio
-            <br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/discordjs/discordjs-original.svg"
-            />
-            Discord.js<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/couchdb/couchdb-original.svg"
-            />
-            CouchDB<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg"
-            />
-            Redis<br />
-            <img
-              class="skill-logo"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
-            />
-            Git
-          </div>
-          <div id="right-column">
-            <h4>Industry Skills</h4>
-            Team Leadership<br />
-            Scrum<br />
-            Kanban<br />
-            <h4>Languages</h4>
-            Portuguese<br />
-            English<br />
-            <h4>Other Skills</h4>
-            Gaming<br />
-            Cooking<br />
-            Amazing Dishwashing<br />
-            Amateur Meme Historian<br />
-            Static Electricity Storage<br />
-            Acoustic Localization
-            <h4>Weaknesses</h4>
-            Artificial Light<br />
-            Gluten
-          </div>
-        </article>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience">
-        <h3>EXPERIENCE</h3>
-        <article>
-          <h4>Full Stack Developer</h4>
-          <p>
-            May 2022 - Present<br />
-            Lisbon, Portugal
-          </p>
-          Currently part of a team of developers tinkering away back where it
-          all started, improving the apps at &lt;Code for All_&gt;.<br />
-          <span class="skill-stack">
-            Stack: JavaScript, React, Redux, Node, Hapi<br />
-          </span>
-          <a href="https://bool.pt/" target="_blank">Bool</a>
-          <hr />
-        </article>
-        <article>
-          <h4>Team Leader && Git Master</h4>
-          <p>
-            September 2020 - March 2022<br />
-            Lisbon, Portugal
-          </p>
-          Led a team developing solutions for insurance companies, insurance
-          expert offices and workshops. Reviewing and versioning our
-          repositories.<br />
-          <a href="https://www.itc.pt/" target="_blank">ITC</a>
-          <hr />
-        </article>
-        <article>
-          <h4>Full Stack Developer</h4>
-          <p>
-            August 2019 - March 2022<br />
-            Lisbon, Portugal
-          </p>
-          Maintaining and optimizing our API and applications as well as
-          developing new features. Was responsible for implementing
-          authentication, password and permission systems.<br />
-          <span class="skill-stack">
-            Stack: JavaScript, TypeScript, AngularJs, Angular, Semantic,
-            Electron, Ionic, Node, Hapi, CouchDB, Redis, Twilio
-          </span>
-          <br />
-          <a href="https://www.itc.pt/" target="_blank">ITC</a>
-          <hr />
-        </article>
-        <article>
-          <h4>Postal Worker</h4>
-          <p>
-            September 2016 - September 2018<br />
-            Alverca, Portugal
-          </p>
-          Tasked with mail and package distribution across two postal areas,
-          this position gave me a great sense of responsibility and direction.
-          Other tasks included cash transactions and data entry.<br />
-          <a href="https://www.ctt.pt/home/index.html" target="_blank">CTT</a>
-          <hr />
-        </article>
-        <article>
-          <h4>Team Leader</h4>
-          <p>
-            July 2015 - July 2016<br />
-            London, England
-          </p>
-          Led a team of direct marketing experts, coaching them on how to deal
-          with clients, how to build presentations and motivating them in their
-          goals. Very rewarding position in terms of personal growth, both mine
-          and my team's.<br />
-          <a href="http://acneuro.pt/" target="_blank">ACN</a>
-          <hr />
-        </article>
-        <article>
-          <h4>Direct Marketing Expert</h4>
-          <p>
-            December 2014 - May 2015<br />
-            London, England
-          </p>
-          Worked directly with companies like Virgin, Securitas and JOi Telecom,
-          dealing with various people face to face presenting them new
-          opportunities. An enriching experience that taught me a lot about how
-          to present myself to others.<br />
-          <a href="http://acneuro.pt/" target="_blank">ACN</a>
-        </article>
-      </section>
-
-      <!-- Education -->
-      <section id="education">
-        <h3>EDUCATION</h3>
-        <article>
-          <h4>Full Stack Programming Bootcamp</h4>
-          <p>January 2019 - April 2019</p>
-          A 14 week intensive and immersive full stack programming bootcamp with
-          emphasis on Java and JavaScript. Used technologies like intelliJ, Git
-          and Unix; frameworks like Spring, Hibernate and Bootstrap and
-          methodologies like Scrum and Kanban. Learned a lot of new things about
-          team work, presentations, motivation and above all had a lot of fun
-          doing it!<br />
-          <a href="https://www.codeforall.io/" target="_blank"
-            >&lt;Code for All_&gt;</a
-          >
-          <hr />
-        </article>
-        <article>
-          <h4>Computer Science Certification</h4>
-          <p>June 2003 - September 2007</p>
-          A technical course, focused on the basis of computer science, going
-          through the history of computing and its technologies, foundations of
-          programming by learning Pascal and Basic and using computer
-          applications like Word, Excel and Access.<br />
-          <a href="http://www.esar.edu.pt/portal/" target="_blank"
-            >Escola Secund&aacute;ria Alves Redol</a
-          >
-        </article>
-      </section>
-
-      <!-- Projects -->
-      <section id="projects">
-        <h3>PROJECTS</h3>
-        <article>
-          <h4>Oak API</h4>
-          <p>January 2023 - Present</p>
-          Oak API, as the name implies, is my own personal server to be used for
-          all my apps. It connects to my database and other APIs that make sense
-          for my needs, including Artemis.<br />
-          <span class="skill-stack">
-            Stack: TypeScript, Node, Hapi, CouchDB, Redis<br />
-          </span>
-          <a href="https://github.com/JohnnyOak85/oak-api" target="_blank"
-            >See project</a
-          ><br />
-          <hr />
-        </article>
-
-        <article>
-          <h4>Artemis</h4>
-          <p>January 2022 - Present</p>
-          Artemis is my personal bot. So far used for Discord but potentially
-          can be used for more in the future.<br />
-          Its speech module allows artemis to automatically respond of react to
-          certain key words and also reply if mentioned. Besides an 8-ball style
-          functionality where it may answer a question with a vague answer.<br />
-          There is also Tales of Murwelgrave, an RPG style text based game where
-          players can interact with monsters and start an RNG focused battle.<br />
-          <span class="skill-stack"> Stack: TypeScript, Discord.js<br /> </span>
-          <a href="https://github.com/JohnnyOak85/artemis" target="_blank"
-            >See project</a
-          ><br />
-          <hr />
-        </article>
-
-        <article>
-          <h4>Hyrule Warriors Definitive App</h4>
-          <p>September 2020 - June 2021</p>
-          I love the Legend of Zelda series. But Hyrule Warriors is a very
-          distinct entry in the franchise, with a lot of things to do and
-          unlock. Being dissatisfied with the available guides, I decided to
-          take matters into my own hands and make my own guide app.<br />
-          <span class="skill-stack">
-            Stack: TypeScript, Angular, Ionic<br />
-          </span>
-          <a
-            href="https://github.com/JohnnyOak85/HyruleWarriorsApp"
-            target="_blank"
-            >See project</a
-          ><br />
-
-          <h5>Try it out</h5>
-          <br />
-          <a
-            href="https://mega.nz/file/y6ZijZyT#rEslkBGzm_W9NQ4hvODFc4SDLKNj_qg1T57gSwWRroc"
-          >
-            <img
-              class="skill-logo"
-              src="resources/images/windows.png"
-              alt="Windows App"
-          /></a>
-          &nbsp;
-          <a
-            href="https://mega.nz/file/XvB1hKSZ#2-LzJE--NN5eJQhu-Yp9XFuIe6yAh0DeUuUfAbTV8bo"
-          >
-            <img
-              class="skill-logo"
-              src="resources/images/android.png"
-              alt="Android App"
-            />
-          </a>
-
-          <hr />
-        </article>
-
-        <article>
-          <h4>Profile Page</h4>
-          <p>August 2019 - November 2020</p>
-          Having a physical CV is cool and all, but why not make my own online
-          interactive CV? And you're experiencing it right now! I avoided using
-          any scripts or styling frameworks.<br />
-          <span class="skill-stack"> Stack: HTML, CSS<br /> </span>
-          <a
-            href="https://github.com/JohnnyOak85/JohnnyOak85.github.io"
-            target="_blank"
-            >See project</a
-          >
-        </article>
-      </section>
-
-      <!-- Certifications -->
-      <section id="certifications">
-        <h3>CERTIFICATIONS</h3>
-        <article>
-          <h4>React</h4>
-          <a href="https://ui.dev/" target="_blank">ui.dev</a> -
-          <a href="resources/docs/react.pdf" target="_blank">See credential</a>
-          <h4>Computer Science 101</h4>
-          <a href="https://www.stanford.edu/" target="_blank"
-            >Stanford University</a
-          >
-          -
-          <a href="resources/docs/computer_science.pdf" target="_blank"
-            >See credential</a
-          >
-          <h4>Educational Training for Trainers</h4>
-          <a href="https://doitbetter.pt/" target="_blank">Do It Better</a> -
-          <a href="resources/docs/training_for_trainers.pdf" target="_blank"
-            >See credential</a
-          >
-          <h4>Leadership and Team Skills</h4>
-          <a href="https://www.shaw-trust.org.uk/" target="_blank"
-            >Shaw Trust</a
-          >
-          -
-          <a href="resources/docs/leadership.pdf" target="_blank"
-            >See credential</a
-          >
-          <h4>Psychology</h4>
-          <a href="https://www.avadolearning.com/" target="_blank"
-            >Avado Learning</a
-          >
-          -
-          <a href="resources/docs/psychology.pdf" target="_blank"
-            >See credential</a
-          >
-        </article>
-      </section>
-
-      <!-- Contacts -->
-      <section id="contacts">
-        <h3>CONTACTS</h3>
-        <span>E-Mail Address: </span>
-        <a href="mailto:joao.cmp@proton.me" target="_blank">
-          <img
-            class="contact-logo"
-            src="resources/images/email.png"
-            alt="Email"
-          />
-          joao.cmp<br />
-        </a>
-        <span>Code Repository: </span>
-        <a href="https://github.com/JohnnyOak85" target="_blank">
-          <img
-            class="contact-logo"
-            src="resources/images/github.png"
-            alt="GitHub"
-          />
-          JohnnyOak85<br />
-        </a>
-        <span>Social Media: </span>
-        <a href="https://www.linkedin.com/in/joaopmcarvalho" target="_blank">
-          <img
-            class="contact-logo"
-            src="resources/images/linkedin.png"
-            alt="LinkedIn"
-          />
-          joaopmcarvalho<br />
-        </a>
-        <span>Discord: </span>
-        <a
-          href="https://discordapp.com/users/349627151957622786"
-          target="_blank"
-        >
-          <img
-            class="contact-logo"
-            src="resources/images/discord.png"
-            alt="Discord"
-          />
-          JohnnyOak<br />
-        </a>
-      </section>
-    </main>
-
-    <!-- Extra -->
-    <div id="bottom">
-      <img
-        id="angler"
-        src="./resources/images/angler_fry.png"
-        alt="Angler Fry"
-      />
-    </div>
-    <div id="secret">
-      <img
-        class="contact-logo"
-        src="resources/images/db.png"
-        alt="Si Xing Qiu"
-      />
+    <div class="button-container">
+      <button onclick="window.location.href='main.html'">
+        Check profile page
+      </button>
+      <button onclick="window.location.href='bash.html'">
+        I prefer the command line
+      </button>
+      <button onclick="window.location.href='resources/docs/cv.pdf'">
+        I just want a CV
+      </button>
     </div>
   </body>
 </html>

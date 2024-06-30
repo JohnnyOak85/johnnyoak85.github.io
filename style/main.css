@@ -10,14 +10,42 @@ body {
   margin: 0;
   width: 100%;
   display: grid;
-  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-areas: "header" "main" "footer";
   background-image: linear-gradient(#04619f, #202020);
 }
 
 /* Navigation Bar */
 
 nav {
-  display: none;
+  position: fixed;
+  top: 5vh;
+  height: 100%;
+  text-decoration: none;
+  z-index: 2;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 15px;
+  border-radius: 25px;
+  padding: 15px;
+  color: #000;
+  background-color: #0abcf9;
+  background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+}
+
+nav a:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+nav a:hover {
+  color: #dfe1fb;
+  transition: all 0.3s ease-in;
 }
 
 /* Header */
@@ -26,12 +54,22 @@ header {
   grid-area: header;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 10vh;
-  padding-top: 10vh;
-  background: url('../resources/images/bg.png') repeat 0 0;
+  margin-bottom: 25vh;
+  padding-top: 20vh;
+  background: url("../resources/images/bg.png") repeat 0 0;
   background-position: left;
   text-align: center;
   animation: slide 20s linear infinite;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#intro {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 #bio {
@@ -40,16 +78,11 @@ header {
     1px 1px 0 #3e2007;
 }
 
-h1 {
-  font-size: 2em;
-  text-align: center;
-}
-
 #oculus {
-  height: 30vh;
+  height: 50vh;
   border-radius: 50%;
   display: block;
-  margin: auto;
+  margin-right: 15vh;
 }
 
 @keyframes slide {
@@ -67,16 +100,15 @@ main {
   grid-area: main;
   overflow: hidden;
   display: grid;
-  font-size: xx-small;
   color: gold;
 }
 
 section {
   display: grid;
-  margin-bottom: 10vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  padding-top: initial;
+  margin-bottom: 15vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  padding-top: 5vh;
   text-align: justify;
 }
 
@@ -112,14 +144,6 @@ h5 {
   margin-left: 15vw;
 }
 
-.skills p {
-  font-style: initial;
-}
-
-.tech {
-  margin-right: initial;
-}
-
 #certifications article {
   padding-left: 15vw;
 }
@@ -129,21 +153,17 @@ h5 {
   padding-bottom: 10vh;
   padding-left: 15vw;
   padding-right: 15vw;
-  font-size: xx-small;
 }
 
 #contacts a {
   text-decoration: none;
   color: cyan;
   width: fit-content;
-}
-
-#contacts span {
-  display: none;
+  padding-bottom: 5%;
 }
 
 .contact-logo {
-  width: 35px;
+  width: 50px;
   vertical-align: middle;
 }
 
@@ -154,10 +174,6 @@ h5 {
 
 .skill-stack {
   font-weight: bold;
-}
-
-#donation {
-  text-align: center;
 }
 
 /* Extra */
@@ -195,9 +211,82 @@ h5 {
   }
 }
 
-#secret {
+#ball {
   display: flex;
   justify-content: center;
   padding-bottom: 1vh;
-  background: url('../resources/images/desert.png') repeat 0% 60%;
+  background: url("../resources/images/desert.png") repeat 0% 60%;
+}
+
+/* Media query for intermediate screen sizes (600px to 1800px) */
+@media (min-width: 600px) and (max-width: 1800px) {
+  header {
+    margin-bottom: initial;
+    padding-top: initial;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #oculus {
+    height: auto;
+    max-width: 100%;
+  }
+
+  #bio {
+    text-align: center;
+    padding: 0 5vw;
+  }
+
+  section {
+    margin-bottom: initial;
+  }
+}
+
+/* Media Queries for Smartphones */
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    height: initial;
+    margin-bottom: initial;
+    padding-top: initial;
+  }
+
+  #intro {
+    grid-template-columns: 100%;
+  }
+
+  #oculus {
+    height: auto;
+    max-width: 80%;
+  }
+
+  section {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: initial;
+  }
+
+  .skills,
+  #certifications article,
+  #contacts {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #contacts {
+    justify-content: center;
+  }
+
+  #right-column {
+    margin-left: initial;
+  }
 }
