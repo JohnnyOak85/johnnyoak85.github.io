@@ -1,0 +1,148 @@
+* {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: url("../resources/images/background.jpeg") repeat 0 0;
+}
+
+h3 {
+  margin-top: 10vh;
+}
+
+.title {
+  position: fixed;
+  z-index: 1;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: #ffff99;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 2em;
+  color: transparent;
+  color: #00ffff;
+  text-shadow: 5px 5px #ff4500, -5px -5px #32cd32;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  height: calc(100vh - 60px);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+  background-color: #ffff99;
+  z-index: 1;
+}
+
+.menu {
+  width: 80%;
+  margin-bottom: 10px;
+  background-color: #d2b48c;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contacts {
+  width: 80%;
+  background-color: #d2b48c;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts span {
+  margin: 10px;
+}
+
+.counter {
+  margin-top: 1vh;
+}
+
+.overlay-image {
+  position: fixed;
+  object-fit: cover;
+  padding-left: 10vh;
+  padding-top: 60vh;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.main-content {
+  margin-top: 5vh;
+  margin-left: 50%;
+  padding: 10vh;
+  flex: 1;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-content p {
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .sidebar {
+    width: 30%;
+  }
+
+  .menu h3 {
+    font-size: 1em;
+  }
+
+  .menu-item {
+    font-size: 0.5em;
+  }
+
+  .overlay-image {
+    padding-left: 0.01vh;
+  }
+
+  .contacts {
+    font-size: 0.7em;
+  }
+
+  .main-content {
+    margin-left: 25%;
+    padding: 5vh;
+  }
+
+  footer {
+    margin-bottom: 40vh;
+  }
+}
