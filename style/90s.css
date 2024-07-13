@@ -132,7 +132,23 @@ footer {
 
 .animate-flicker {
   display: inline-block;
-  animation: textFlip 3s infinite linear;
+  animation: textFlip 2s infinite linear;
+}
+
+@keyframes pulse {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: #00ffff;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.link {
+  animation: pulse 1s infinite;
 }
 
 @media only screen and (max-width: 600px) {
