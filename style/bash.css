@@ -10,7 +10,6 @@ body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   background-color: black;
-  color: white;
 }
 
 h1 {
@@ -19,7 +18,7 @@ h1 {
 
 h1,
 h3 {
-  color: #008f11;
+  color: white;
 }
 
 a {
@@ -35,7 +34,7 @@ main {
   grid-area: main;
   overflow: hidden;
   display: grid;
-  color: gold;
+  color: white;
 }
 
 .skills {

@@ -10,10 +10,11 @@ body {
   display: flex;
   flex-direction: column;
   background: url("../resources/images/background.jpeg") repeat 0 0;
+  cursor: url("../resources/icons/convert32x32.cur"), default;
 }
 
-h3 {
-  margin-top: 10vh;
+a {
+  cursor: url("../resources/icons/action32x32.cur"), default;
 }
 
 .title {
@@ -108,8 +109,30 @@ h3 {
   font-weight: 500;
 }
 
+.body-gif {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
 footer {
   margin-top: 10vh;
+}
+
+@keyframes textFlip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.animate-flicker {
+  display: inline-block;
+  animation: textFlip 3s infinite linear;
 }
 
 @media only screen and (max-width: 600px) {
@@ -140,6 +163,10 @@ footer {
   .main-content {
     margin-left: 25%;
     padding: 5vh;
+  }
+
+  .body-gif {
+    width: 100%;
   }
 
   footer {
